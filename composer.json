@@ -1,6 +1,6 @@
 {
-    "name": "chameleon-system/chameleon_shop_demo",
-    "description": "The Chameleon System shop demo",
+    "name": "chameleon-system/chameleon-system",
+    "description": "The Chameleon System",
     "type": "project",
     "license": "MIT",
     "authors": [
