@@ -1,0 +1,16 @@
+imports:
+    - { resource: parameters.yml }
+
+framework:
+  secret:          "%secret%"
+
+parameters:
+  chameleon_system_shop.article_list.view_to_list_view_mapping:
+    rightNoticeList:           "/common/lists/listStandardShopArticle.html.twig"
+    full:                      "/common/lists/listExtendedShopArticle.html.twig"
+    standardEmptyOnNoArticles: "/common/lists/listScrollShopArticle.html.twig"
+    standard:                  "/common/lists/listScrollShopArticle.html.twig"
+
+chameleon_system_java_script_minification:
+  js_minifier_to_use: "jshrink"
+

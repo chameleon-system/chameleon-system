@@ -1,0 +1,25 @@
+parameters:
+    secret: !ThisTokenIsNotSoSecretChangeIt!
+    chameleon_system_core.debug.show_view_source_html_hints: true
+    chameleon_system_core.development_email: "the developer's mail address"
+
+    database_host: "localhost"
+    database_port: 3306
+    database_name: "shp_dmo61"
+    database_user: "shp_dmo61"
+    database_password: "insert-password"
+
+    chameleon_system_core.cache.memcache_server1: false
+    chameleon_system_core.cache.memcache_port1: "11211"
+
+    chameleon_system_core.cache.memcache_sessions_server1: false
+    chameleon_system_core.cache.memcache_sessions_port1: "11212"
+
+    chameleon_system_core.mail_target_transformation_service.enabled: false
+    chameleon_system_core.mail_target_transformation_service.subject_prefix: "[TEST] "
+    chameleon_system_core.mail_target_transformation_service.target_mail: "mail@example.com"
+    chameleon_system_core.mail_target_transformation_service.white_list: "@@PORTAL-DOMAINS"
+
+    mailer_host: 127.0.0.1
+    mailer_user: ~
+    mailer_password: ~

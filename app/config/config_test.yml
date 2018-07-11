@@ -1,0 +1,31 @@
+imports:
+   - { resource: config.yml }
+
+framework:
+  test: ~
+  router:
+    resource: "%kernel.root_dir%/config/routing_dev.yml"
+    strict_requirements: true
+  profiler: { only_exceptions: false }
+
+web_profiler:
+    toolbar: true
+    intercept_redirects: false
+
+parameters:
+  chameleon_system_core.cache.cache_less_files: true
+  chameleon_system_core.cache.allow: true
+  chameleon_system_core.cache.default_max_age_in_seconds: 60
+  chameleon_system_core.resources.enable_external_resource_collection: false
+  chameleon_system_core.debug.debug_last_order: false
+  chameleon_system_core.debug.show_view_source_html_hints: true
+  chameleon_system_core.cache.memcache_activate: true
+  chameleon_system_core.cache.memcache_use_fallback: false
+  chameleon_system_core.cache.include_cache_delete_trace_info: false
+
+monolog:
+  handlers:
+    main:
+      type:   stream
+      path:   "%kernel.logs_dir%/%kernel.environment%.log"
+      level:  debug

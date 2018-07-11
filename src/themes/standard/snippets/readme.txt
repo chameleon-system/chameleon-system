@@ -1,0 +1,2 @@
+Put all your twig templates in this directory.
+If you want to overwrite templates from shop standard theme, put a twig file with same name in same directory structure like the template in the shop standard theme.

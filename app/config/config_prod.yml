@@ -1,0 +1,19 @@
+imports:
+   - { resource: config.yml }
+
+parameters:
+  chameleon_system_core.cache.cache_less_files: true
+  chameleon_system_core.cache.allow: true
+  chameleon_system_core.debug.debug_last_order: false
+  chameleon_system_core.cache.memcache_activate: true
+  chameleon_system_core.cache.memcache_use_fallback: false
+  chameleon_system_core.cache.include_cache_delete_trace_info: false
+  chameleon_system_core.debug.show_view_source_html_hints: false
+  chameleon_system_core.cms_log_level: 4
+
+monolog:
+  handlers:
+    main:
+      type:   stream
+      path:   "%kernel.logs_dir%/%kernel.environment%.log"
+      level:  warning

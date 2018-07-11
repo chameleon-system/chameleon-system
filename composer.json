@@ -1,0 +1,72 @@
+{
+    "name": "chameleon-system/chameleon_shop_demo",
+    "description": "The Chameleon System shop demo",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ESONO AG",
+            "email": "info@chameleonsystem.com",
+            "homepage": "https://www.chameleonsystem.com",
+            "role": "Company"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://composer.esono.de"
+        }
+    ],
+    "require": {
+        "chameleon-system/chameleon-shop": "dev-master",
+        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
+        "incenteev/composer-parameter-handler": "~2.0",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "symfony/monolog-bundle": "~2.4|~3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "@stable",
+        "sensio/generator-bundle": "~3.0"
+
+        ,
+        "chameleon-system/chameleon-base": "dev-master",
+        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/sanitycheck-bundle": "dev-master"
+    },
+    "autoload": {
+        "classmap": [
+            "app/AppKernel.php",
+            "src/extensions",
+            "src/framework"
+        ],
+        "psr-4": {
+            "AppBundle\\": "src/AppBundle"
+        }
+    },
+    "scripts": {
+        "symfony-scripts": [
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+        ],
+        "post-install-cmd": [
+            "@symfony-scripts"
+        ],
+        "post-update-cmd": [
+            "@symfony-scripts",
+            "ChameleonSystem\\DistributionBundle\\VersionCheck\\PostUpdateVersionCheck::checkVersion"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-web-dir": "web",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}

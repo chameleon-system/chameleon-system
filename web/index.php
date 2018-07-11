@@ -1,0 +1,1 @@
+../vendor/chameleon-system/chameleon-base/src/CoreBundle/FrontController/app.php

@@ -1,0 +1,6 @@
+@import "/assets/less/chameleon.css";
+@import "./reset.css";
+
+img.img-rounded, img.img-circle, img.img-polaroid {}
+
+/* add any other styles you want in your wysiwyg as format */
