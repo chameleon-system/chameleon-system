@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "070d99724b8ab7ef8d14a258dd97d658",
+    "content-hash": "0bde4b139dca8358a66d4b01e4b3d403",
     "packages": [
         {
             "name": "bassjobsen/bootstrap-3-typeahead",
@@ -44,13 +44,20 @@
         },
         {
             "name": "chameleon-system/chameleon-base",
-            "version": "dev-master",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
-                "url": "git@git.esono.de:chameleon/chameleon-base.git",
-                "reference": "4074184e0456f6f8d6ecf8edf3d2d737172f2848"
+                "url": "git@github.com:chameleon-system/chameleon-base.git",
+                "reference": "826a70f2496e8d1f9c0ab501900f2b11c60786c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/826a70f2496e8d1f9c0ab501900f2b11c60786c1",
+                "reference": "826a70f2496e8d1f9c0ab501900f2b11c60786c1",
+                "shasum": ""
             },
             "require": {
+                "chameleon-system/sanitycheck-bundle": "~6.2.0",
                 "ckeditor/ckeditor": "4.6.2",
                 "doctrine/dbal": "~2.5",
                 "ext-curl": "*",
@@ -112,8 +119,6 @@
                 "chameleon-system/update-counter-migration-bundle": "*"
             },
             "require-dev": {
-                "chameleon-system/sanitycheck": "dev-master@dev",
-                "chameleon-system/sanitycheck-bundle": "dev-master@dev",
                 "phpunit/phpunit": "~7.0"
             },
             "bin": [
@@ -203,18 +208,24 @@
                 }
             ],
             "description": "The Chameleon System core.",
-            "time": "2018-07-11T11:02:55+00:00"
+            "time": "2018-07-11T16:31:38+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop",
-            "version": "dev-master",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
-                "url": "git@git.esono.de:chameleon/chameleon-shop.git",
-                "reference": "6a0dbdd7ef9afc8a4867d6c9906f0250b9fdfe91"
+                "url": "git@github.com:chameleon-system/chameleon-shop.git",
+                "reference": "cd2f25a6d7bdf78c7686da5361512d387523095d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/cd2f25a6d7bdf78c7686da5361512d387523095d",
+                "reference": "cd2f25a6d7bdf78c7686da5361512d387523095d",
+                "shasum": ""
             },
             "require": {
-                "chameleon-system/chameleon-base": "dev-master",
+                "chameleon-system/chameleon-base": "~6.2.0",
                 "simplepie/simplepie": "~1.3"
             },
             "replace": {
@@ -342,19 +353,25 @@
                 "E-Commerce",
                 "Shop"
             ],
-            "time": "2018-07-11T11:03:09+00:00"
+            "time": "2018-07-11T12:31:45+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop-theme-bundle",
-            "version": "dev-master",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
-                "url": "git@git.esono.de:chameleon/chameleon-shop-theme-bundle.git",
-                "reference": "ff702692d1e5f5fa7ba8dc4877b94fd477753f76"
+                "url": "git@github.com:chameleon-system/chameleon-shop-theme-bundle.git",
+                "reference": "c4e1730125da08621da150b2487b449dc8aec890"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop-theme-bundle/zipball/c4e1730125da08621da150b2487b449dc8aec890",
+                "reference": "c4e1730125da08621da150b2487b449dc8aec890",
+                "shasum": ""
             },
             "require": {
                 "bassjobsen/bootstrap-3-typeahead": "~4.0",
-                "chameleon-system/chameleon-shop": "dev-master",
+                "chameleon-system/chameleon-shop": "~6.2.0",
                 "oyejorge/less.php": "~1.5",
                 "twbs/bootstrap": "~3.3"
             },
@@ -374,7 +391,7 @@
             },
             "notification-url": "https://composer.esono.de/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -390,7 +407,135 @@
                 "Theme",
                 "Themes"
             ],
-            "time": "2018-07-11T11:04:07+00:00"
+            "time": "2018-07-11T12:59:07+00:00"
+        },
+        {
+            "name": "chameleon-system/sanitycheck",
+            "version": "6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chameleon-system/sanitycheck.git",
+                "reference": "0c7df6b0303b59699963f79aab724ecb46fa1063"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chameleon-system/sanitycheck/zipball/0c7df6b0303b59699963f79aab724ecb46fa1063",
+                "reference": "0c7df6b0303b59699963f79aab724ecb46fa1063",
+                "shasum": ""
+            },
+            "require": {
+                "psr/log": "~1.0",
+                "symfony/translation": "~2.3|~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "extra": {
+                "name": "Chameleon SanityCheck",
+                "dev_info_installation": "",
+                "dev_info_usage": "",
+                "pricegroup": 0,
+                "public": false,
+                "screenshotfolder_id": ""
+            },
+            "autoload": {
+                "psr-4": {
+                    "ChameleonSystem\\SanityCheck\\": [
+                        "src",
+                        "tests"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ESONO AG",
+                    "email": "info@chameleonsystem.com",
+                    "homepage": "https://www.chameleonsystem.com",
+                    "role": "Company"
+                }
+            ],
+            "description": "Performs checks to ensure the system is configured correctly and all external resources are available",
+            "homepage": "http://www.chameleon-system.de",
+            "keywords": [
+                "administration",
+                "check",
+                "monitoring",
+                "sanity"
+            ],
+            "time": "2018-07-11T15:07:39+00:00"
+        },
+        {
+            "name": "chameleon-system/sanitycheck-bundle",
+            "version": "6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chameleon-system/sanitycheck-bundle.git",
+                "reference": "06f06b7d836896650509029b6bb8744d872074bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chameleon-system/sanitycheck-bundle/zipball/06f06b7d836896650509029b6bb8744d872074bf",
+                "reference": "06f06b7d836896650509029b6bb8744d872074bf",
+                "shasum": ""
+            },
+            "require": {
+                "chameleon-system/sanitycheck": "~6.2.0",
+                "symfony/config": "~2.3|~3.0|~4.0",
+                "symfony/console": "~2.3|~3.0|~4.0",
+                "symfony/dependency-injection": "~2.3|~3.0|~4.0",
+                "symfony/http-kernel": "~2.3|~3.0|~4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~7.0"
+            },
+            "suggest": {
+                "phpmailer/phpmailer": "To use the PHPMailer message output."
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "name": "SanityCheck Bundle",
+                "dev_info_installation": "",
+                "dev_info_usage": "",
+                "pricegroup": 0,
+                "public": false,
+                "screenshotfolder_id": ""
+            },
+            "autoload": {
+                "psr-4": {
+                    "ChameleonSystem\\SanityCheckBundle\\": [
+                        "",
+                        "Tests"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ESONO AG",
+                    "email": "info@chameleonsystem.com",
+                    "homepage": "https://www.chameleonsystem.com",
+                    "role": "Company"
+                }
+            ],
+            "description": "A Symfony bundle for chameleon-system/sanitycheck",
+            "homepage": "http://www.chameleon-system.de",
+            "keywords": [
+                "administration",
+                "bundle",
+                "check",
+                "monitoring",
+                "sanity",
+                "symfony"
+            ],
+            "time": "2018-07-11T16:10:00+00:00"
         },
         {
             "name": "ckeditor/ckeditor",
@@ -2744,122 +2889,6 @@
     ],
     "packages-dev": [
         {
-            "name": "chameleon-system/sanitycheck",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@git.esono.de:chameleon/sanitycheck.git",
-                "reference": "3d9f1fdbf5ed81b4b4b73f1dacfbdc325ea35184"
-            },
-            "require": {
-                "psr/log": "~1.0",
-                "symfony/translation": "~2.3|~3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~5.2|~6.0|~7.0"
-            },
-            "type": "library",
-            "extra": {
-                "name": "Chameleon SanityCheck",
-                "dev_info_installation": "",
-                "dev_info_usage": "",
-                "pricegroup": 0,
-                "public": false,
-                "screenshotfolder_id": ""
-            },
-            "autoload": {
-                "psr-4": {
-                    "ChameleonSystem\\SanityCheck\\": [
-                        "src",
-                        "tests"
-                    ]
-                }
-            },
-            "notification-url": "https://composer.esono.de/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ESONO AG",
-                    "email": "info@chameleonsystem.com",
-                    "homepage": "https://www.chameleonsystem.com",
-                    "role": "Company"
-                }
-            ],
-            "description": "Performs checks to ensure the system is configured correctly and all external resources are available",
-            "homepage": "http://www.chameleon-system.de",
-            "keywords": [
-                "administration",
-                "check",
-                "monitoring",
-                "sanity"
-            ],
-            "time": "2018-07-11T11:06:20+00:00"
-        },
-        {
-            "name": "chameleon-system/sanitycheck-bundle",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "git@git.esono.de:chameleon/sanitycheckbundle.git",
-                "reference": "06f0b8298dc274e85abc766d7856a205a7adeceb"
-            },
-            "require": {
-                "chameleon-system/sanitycheck": "dev-master",
-                "symfony/config": "~2.3|~3.0|~4.0",
-                "symfony/console": "~2.3|~3.0|~4.0",
-                "symfony/dependency-injection": "~2.3|~3.0|~4.0",
-                "symfony/http-kernel": "~2.3|~3.0|~4.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~5.2|~6.0|~7.0"
-            },
-            "suggest": {
-                "phpmailer/phpmailer": "To use the PHPMailer message output."
-            },
-            "type": "symfony-bundle",
-            "extra": {
-                "name": "SanityCheck Bundle",
-                "dev_info_installation": "",
-                "dev_info_usage": "",
-                "pricegroup": 0,
-                "public": false,
-                "screenshotfolder_id": ""
-            },
-            "autoload": {
-                "psr-4": {
-                    "ChameleonSystem\\SanityCheckBundle\\": [
-                        "",
-                        "Tests"
-                    ]
-                }
-            },
-            "notification-url": "https://composer.esono.de/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "ESONO AG",
-                    "email": "info@chameleonsystem.com",
-                    "homepage": "https://www.chameleonsystem.com",
-                    "role": "Company"
-                }
-            ],
-            "description": "A Symfony bundle for chameleon-system/sanitycheck",
-            "homepage": "http://www.chameleon-system.de",
-            "keywords": [
-                "administration",
-                "bundle",
-                "check",
-                "monitoring",
-                "sanity",
-                "symfony"
-            ],
-            "time": "2018-07-11T11:06:46+00:00"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.1.0",
             "source": {
@@ -4322,12 +4351,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "chameleon-system/chameleon-shop": 20,
-        "chameleon-system/chameleon-shop-theme-bundle": 20,
-        "phpunit/phpunit": 0,
-        "chameleon-system/chameleon-base": 20,
-        "chameleon-system/sanitycheck": 20,
-        "chameleon-system/sanitycheck-bundle": 20
+        "phpunit/phpunit": 0
     },
     "prefer-stable": false,
     "prefer-lowest": false,
