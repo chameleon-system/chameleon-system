@@ -1,4 +1,5 @@
 Chameleon System
 ================
+The E-Business Platform
 
-Chameleon - The E-Business Platform - find a demo at https://demo.chameleon-system.de/
+find a demo at https://demo.chameleon-system.de/
