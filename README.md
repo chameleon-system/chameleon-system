@@ -2,4 +2,5 @@
 
 The E-Business Platform
 
-find a demo at https://demo.chameleon-system.de/
+* find a demo at https://demo.chameleon-system.de/
+* find a customer documentation (German) at https://manual.chameleon-system.de
