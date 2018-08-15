@@ -11,12 +11,6 @@
             "role": "Company"
         }
     ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://composer.esono.de"
-        }
-    ],
     "require": {
         "chameleon-system/chameleon-shop": "~6.2.0",
         "chameleon-system/chameleon-shop-theme-bundle": "~6.2.0",
