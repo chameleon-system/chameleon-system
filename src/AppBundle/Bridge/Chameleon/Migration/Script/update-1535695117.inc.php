@@ -7,7 +7,6 @@
 
 $data = TCMSLogChange::createMigrationQueryData('cms_tbl_conf', 'de')
     ->setFields([
-        //'name' => 'shop_article',
         'list_query' => '    SELECT `shop_article`.*,
            `shop_article_stats`.`stats_sales`,
            `shop_article_stats`.`stats_detail_views`,
@@ -21,7 +20,7 @@ $data = TCMSLogChange::createMigrationQueryData('cms_tbl_conf', 'de')
  LEFT JOIN `shop_manufacturer` ON `shop_article`.`shop_manufacturer_id` = `shop_manufacturer`.`id`',
     ])
     ->setWhereEquals([
-        'id' => '238',
+        'name' => 'shop_article',
     ])
 ;
 TCMSLogChange::update(__LINE__, $data);
@@ -31,13 +30,6 @@ $data = TCMSLogChange::createMigrationQueryData('cms_tbl_display_list_fields', '
         'title' => 'Herstellername',
         'name' => '`shop_manufacturer`.`name`',
         'db_alias' => 'manufacturer',
-        'position' => '5',
-        'width' => '-1',
-        'align' => 'left',
-        'callback_fnc' => '',
-        'use_callback' => '0',
-        'show_in_list' => '1',
-        'show_in_sort' => '0',
     ])
     ->setWhereEquals([
         'id' => '5babd0e0-29c3-c871-31a4-c5e1c59ca6f8',
