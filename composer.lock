@@ -44,16 +44,16 @@
         },
         {
             "name": "chameleon-system/chameleon-base",
-            "version": "6.2.1",
+            "version": "6.2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-base.git",
-                "reference": "6c85d27d555c8a5eb9c7d8298c78bd2044db70a3"
+                "reference": "cb71f605a719b976f1d007c04d198d95540da418"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/6c85d27d555c8a5eb9c7d8298c78bd2044db70a3",
-                "reference": "6c85d27d555c8a5eb9c7d8298c78bd2044db70a3",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/cb71f605a719b976f1d007c04d198d95540da418",
+                "reference": "cb71f605a719b976f1d007c04d198d95540da418",
                 "shasum": ""
             },
             "require": {
@@ -120,6 +120,7 @@
                 "chameleon-system/update-counter-migration-bundle": "*"
             },
             "require-dev": {
+                "chameleon-system/code-style-config": "dev-master@dev",
                 "phpunit/phpunit": "~7.0"
             },
             "bin": [
@@ -209,20 +210,20 @@
                 }
             ],
             "description": "The Chameleon System core.",
-            "time": "2018-08-16T14:38:59+00:00"
+            "time": "2018-09-19T13:29:25+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop",
-            "version": "6.2.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-shop.git",
-                "reference": "18eb46ee61886887fbf9a0d394055ff42165eff4"
+                "reference": "4c02495fe295d151e888e28440eaa785d32ab6e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/18eb46ee61886887fbf9a0d394055ff42165eff4",
-                "reference": "18eb46ee61886887fbf9a0d394055ff42165eff4",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/4c02495fe295d151e888e28440eaa785d32ab6e9",
+                "reference": "4c02495fe295d151e888e28440eaa785d32ab6e9",
                 "shasum": ""
             },
             "require": {
@@ -255,8 +256,9 @@
                 "chameleon-system/pkgtshoppaymenthandlersofortueberweisung": "*"
             },
             "require-dev": {
+                "chameleon-system/code-style-config": "dev-master@dev",
                 "phpunit/dbunit": "~2.0",
-                "phpunit/phpunit": "~5.0"
+                "phpunit/phpunit": "~5.7"
             },
             "type": "library",
             "extra": {
@@ -354,7 +356,7 @@
                 "e-commerce",
                 "shop"
             ],
-            "time": "2018-08-15T08:32:19+00:00"
+            "time": "2018-09-18T09:19:42+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop-theme-bundle",
@@ -412,16 +414,16 @@
         },
         {
             "name": "chameleon-system/sanitycheck",
-            "version": "6.2.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/sanitycheck.git",
-                "reference": "d368a19cbdbf9399f72a3ad091d810af156ca4de"
+                "reference": "ef792a2cb02f0b6437e12b466d3eb624a2685cbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/sanitycheck/zipball/d368a19cbdbf9399f72a3ad091d810af156ca4de",
-                "reference": "d368a19cbdbf9399f72a3ad091d810af156ca4de",
+                "url": "https://api.github.com/repos/chameleon-system/sanitycheck/zipball/ef792a2cb02f0b6437e12b466d3eb624a2685cbb",
+                "reference": "ef792a2cb02f0b6437e12b466d3eb624a2685cbb",
                 "shasum": ""
             },
             "require": {
@@ -429,6 +431,7 @@
                 "symfony/translation": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
+                "chameleon-system/code-style-config": "dev-master@dev",
                 "phpunit/phpunit": "~7.0"
             },
             "type": "library",
@@ -468,20 +471,20 @@
                 "monitoring",
                 "sanity"
             ],
-            "time": "2018-08-06T09:17:31+00:00"
+            "time": "2018-08-23T12:26:38+00:00"
         },
         {
             "name": "chameleon-system/sanitycheck-bundle",
-            "version": "6.2.1",
+            "version": "6.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/sanitycheck-bundle.git",
-                "reference": "2ecdc70d17bd56075f69541f9e352a0e2e7e82b4"
+                "reference": "5af8847d48cdc6f78e8aac9e4772974f7d441827"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/sanitycheck-bundle/zipball/2ecdc70d17bd56075f69541f9e352a0e2e7e82b4",
-                "reference": "2ecdc70d17bd56075f69541f9e352a0e2e7e82b4",
+                "url": "https://api.github.com/repos/chameleon-system/sanitycheck-bundle/zipball/5af8847d48cdc6f78e8aac9e4772974f7d441827",
+                "reference": "5af8847d48cdc6f78e8aac9e4772974f7d441827",
                 "shasum": ""
             },
             "require": {
@@ -492,6 +495,7 @@
                 "symfony/http-kernel": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
+                "chameleon-system/code-style-config": "dev-master@dev",
                 "phpunit/phpunit": "~7.0"
             },
             "suggest": {
@@ -536,7 +540,7 @@
                 "sanity",
                 "symfony"
             ],
-            "time": "2018-08-07T08:55:58+00:00"
+            "time": "2018-08-23T12:29:06+00:00"
         },
         {
             "name": "ckeditor/ckeditor",
@@ -649,16 +653,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.7.1",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a"
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/b3217d58609e9c8e661cd41357a54d926c4a2a1a",
-                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57",
                 "shasum": ""
             },
             "require": {
@@ -669,8 +673,9 @@
             },
             "require-dev": {
                 "alcaeus/mongo-php-adapter": "^1.1",
+                "doctrine/coding-standard": "^4.0",
                 "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^5.7",
+                "phpunit/phpunit": "^7.0",
                 "predis/predis": "~1.0"
             },
             "suggest": {
@@ -679,7 +684,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -714,12 +719,12 @@
                 }
             ],
             "description": "Caching library offering an object-oriented API for many cache backends",
-            "homepage": "http://www.doctrine-project.org",
+            "homepage": "https://www.doctrine-project.org",
             "keywords": [
                 "cache",
                 "caching"
             ],
-            "time": "2017-08-25T07:02:50+00:00"
+            "time": "2018-08-21T18:01:43+00:00"
         },
         {
             "name": "doctrine/collections",
@@ -1147,16 +1152,16 @@
         },
         {
             "name": "doctrine/persistence",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "17896f6d56a2794a1619e019596ae627aabd8fd5"
+                "reference": "af1ec238659a83e320f03e0e454e200f689b4b97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/17896f6d56a2794a1619e019596ae627aabd8fd5",
-                "reference": "17896f6d56a2794a1619e019596ae627aabd8fd5",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/af1ec238659a83e320f03e0e454e200f689b4b97",
+                "reference": "af1ec238659a83e320f03e0e454e200f689b4b97",
                 "shasum": ""
             },
             "require": {
@@ -1221,7 +1226,7 @@
             "keywords": [
                 "persistence"
             ],
-            "time": "2018-06-14T18:57:48+00:00"
+            "time": "2018-07-12T12:37:50+00:00"
         },
         {
             "name": "doctrine/reflection",
@@ -2833,16 +2838,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.44",
+            "version": "v2.8.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "789dc7eb57579185a430e65c5efce4b2d6b6b7b1"
+                "reference": "289dc238c533476d0101d736816b408b02e51751"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/789dc7eb57579185a430e65c5efce4b2d6b6b7b1",
-                "reference": "789dc7eb57579185a430e65c5efce4b2d6b6b7b1",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/289dc238c533476d0101d736816b408b02e51751",
+                "reference": "289dc238c533476d0101d736816b408b02e51751",
                 "shasum": ""
             },
             "require": {
@@ -2969,20 +2974,20 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-08-01T14:12:49+00:00"
+            "time": "2018-08-27T17:33:57+00:00"
         },
         {
             "name": "tedivm/jshrink",
-            "version": "v1.3.0",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tedious/JShrink.git",
-                "reference": "68ce379b213741e86f02bf6053b0d26b9f833448"
+                "reference": "21254058dc3ce6aba6bef458cff4bfa25cf8b198"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tedious/JShrink/zipball/68ce379b213741e86f02bf6053b0d26b9f833448",
-                "reference": "68ce379b213741e86f02bf6053b0d26b9f833448",
+                "url": "https://api.github.com/repos/tedious/JShrink/zipball/21254058dc3ce6aba6bef458cff4bfa25cf8b198",
+                "reference": "21254058dc3ce6aba6bef458cff4bfa25cf8b198",
                 "shasum": ""
             },
             "require": {
@@ -3015,7 +3020,7 @@
                 "javascript",
                 "minifier"
             ],
-            "time": "2017-12-08T00:59:56+00:00"
+            "time": "2018-09-16T00:02:51+00:00"
         },
         {
             "name": "twbs/bootstrap",
@@ -3620,20 +3625,23 @@
         },
         {
             "name": "phpunit/php-file-iterator",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+                "reference": "050bedf145a257b1ff02746c31894800e5122946"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
-                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
+                "reference": "050bedf145a257b1ff02746c31894800e5122946",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.1"
             },
             "type": "library",
             "extra": {
@@ -3663,7 +3671,7 @@
                 "filesystem",
                 "iterator"
             ],
-            "time": "2018-06-11T11:44:00+00:00"
+            "time": "2018-09-13T20:33:42+00:00"
         },
         {
             "name": "phpunit/php-text-template",
@@ -3806,16 +3814,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.1",
+            "version": "7.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "f9b14c17860eccb440a0352a117a81eb754cff5a"
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f9b14c17860eccb440a0352a117a81eb754cff5a",
-                "reference": "f9b14c17860eccb440a0352a117a81eb754cff5a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
+                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
                 "shasum": ""
             },
             "require": {
@@ -3886,7 +3894,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-08-07T06:44:28+00:00"
+            "time": "2018-09-08T15:14:29+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
