@@ -44,16 +44,16 @@
         },
         {
             "name": "chameleon-system/chameleon-base",
-            "version": "6.2.2.1",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-base.git",
-                "reference": "cb71f605a719b976f1d007c04d198d95540da418"
+                "reference": "1dba04237f6375c51031f177aab5ad8c31809e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/cb71f605a719b976f1d007c04d198d95540da418",
-                "reference": "cb71f605a719b976f1d007c04d198d95540da418",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/1dba04237f6375c51031f177aab5ad8c31809e33",
+                "reference": "1dba04237f6375c51031f177aab5ad8c31809e33",
                 "shasum": ""
             },
             "require": {
@@ -210,20 +210,20 @@
                 }
             ],
             "description": "The Chameleon System core.",
-            "time": "2018-09-19T13:29:25+00:00"
+            "time": "2018-10-15T12:36:51+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop",
-            "version": "6.2.2",
+            "version": "6.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-shop.git",
-                "reference": "4c02495fe295d151e888e28440eaa785d32ab6e9"
+                "reference": "44294f4546f23d6296f4fc63809f93a278b2f028"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/4c02495fe295d151e888e28440eaa785d32ab6e9",
-                "reference": "4c02495fe295d151e888e28440eaa785d32ab6e9",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/44294f4546f23d6296f4fc63809f93a278b2f028",
+                "reference": "44294f4546f23d6296f4fc63809f93a278b2f028",
                 "shasum": ""
             },
             "require": {
@@ -356,20 +356,20 @@
                 "e-commerce",
                 "shop"
             ],
-            "time": "2018-09-18T09:19:42+00:00"
+            "time": "2018-10-15T12:09:57+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop-theme-bundle",
-            "version": "6.2.1",
+            "version": "6.2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-shop-theme-bundle.git",
-                "reference": "52bba860a7dc7cb4f5299b0e12bfc172ff7b965a"
+                "reference": "aafbc02166f8967931203903a75353dba1860636"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop-theme-bundle/zipball/52bba860a7dc7cb4f5299b0e12bfc172ff7b965a",
-                "reference": "52bba860a7dc7cb4f5299b0e12bfc172ff7b965a",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop-theme-bundle/zipball/aafbc02166f8967931203903a75353dba1860636",
+                "reference": "aafbc02166f8967931203903a75353dba1860636",
                 "shasum": ""
             },
             "require": {
@@ -377,6 +377,10 @@
                 "chameleon-system/chameleon-shop": "~6.2.0",
                 "oyejorge/less.php": "~1.5",
                 "twbs/bootstrap": "~3.3"
+            },
+            "require-dev": {
+                "chameleon-system/code-style-config": "dev-master@dev",
+                "phpunit/phpunit": "~7.0"
             },
             "type": "esono-theme",
             "extra": {
@@ -410,7 +414,7 @@
                 "theme",
                 "themes"
             ],
-            "time": "2018-08-07T08:56:12+00:00"
+            "time": "2018-10-15T13:02:00+00:00"
         },
         {
             "name": "chameleon-system/sanitycheck",
@@ -2838,16 +2842,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.45",
+            "version": "v2.8.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "289dc238c533476d0101d736816b408b02e51751"
+                "reference": "a7f5ade1f8b3eb74a130cf681c45bfa991c330d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/289dc238c533476d0101d736816b408b02e51751",
-                "reference": "289dc238c533476d0101d736816b408b02e51751",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/a7f5ade1f8b3eb74a130cf681c45bfa991c330d1",
+                "reference": "a7f5ade1f8b3eb74a130cf681c45bfa991c330d1",
                 "shasum": ""
             },
             "require": {
@@ -2974,7 +2978,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2018-08-27T17:33:57+00:00"
+            "time": "2018-09-30T03:53:41+00:00"
         },
         {
             "name": "tedivm/jshrink",
@@ -3562,16 +3566,16 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "6.0.7",
+            "version": "6.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a"
+                "reference": "848f78b3309780fef7ec8c4666b7ab4e6b09b22f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/865662550c384bc1db7e51d29aeda1c2c161d69a",
-                "reference": "865662550c384bc1db7e51d29aeda1c2c161d69a",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/848f78b3309780fef7ec8c4666b7ab4e6b09b22f",
+                "reference": "848f78b3309780fef7ec8c4666b7ab4e6b09b22f",
                 "shasum": ""
             },
             "require": {
@@ -3621,7 +3625,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-01T07:51:50+00:00"
+            "time": "2018-10-04T03:41:23+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -3814,16 +3818,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.3.5",
+            "version": "7.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
-                "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f3837fa1e07758057ae06e8ddec6d06ba183f126",
+                "reference": "f3837fa1e07758057ae06e8ddec6d06ba183f126",
                 "shasum": ""
             },
             "require": {
@@ -3848,7 +3852,7 @@
                 "sebastian/exporter": "^3.1",
                 "sebastian/global-state": "^2.0",
                 "sebastian/object-enumerator": "^3.0.3",
-                "sebastian/resource-operations": "^1.0",
+                "sebastian/resource-operations": "^2.0",
                 "sebastian/version": "^2.0.1"
             },
             "conflict": {
@@ -3868,7 +3872,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.3-dev"
+                    "dev-master": "7.4-dev"
                 }
             },
             "autoload": {
@@ -3894,7 +3898,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-09-08T15:14:29+00:00"
+            "time": "2018-10-05T04:05:24+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4376,25 +4380,25 @@
         },
         {
             "name": "sebastian/resource-operations",
-            "version": "1.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/resource-operations.git",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-                "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
+                "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
+                "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0"
+                "php": "^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -4414,7 +4418,7 @@
             ],
             "description": "Provides a list of PHP built-in functions that operate on resources",
             "homepage": "https://www.github.com/sebastianbergmann/resource-operations",
-            "time": "2015-07-28T20:34:47+00:00"
+            "time": "2018-10-04T04:07:39+00:00"
         },
         {
             "name": "sebastian/version",
