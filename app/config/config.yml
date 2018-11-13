@@ -34,7 +34,7 @@ monolog:
       id: cmsPkgCore.logHandler.database
       channels:
       - "core_security"
-      - "core_cmsUpdates"
+      - "core_cms_updates"
       - "core_cronjobs"
       - "core_api"
 
