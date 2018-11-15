@@ -38,12 +38,16 @@ monolog:
       - "core_cronjobs"
       - "core_api"
 
+    database_for_fingers_crossed:
+      type: service
+      id: cmsPkgCore.logHandler.database
+
     standard:
       type: fingers_crossed
-      handler: database
+      handler: database_for_fingers_crossed
       channels:
       - "core_standard"
-    
+
     dbal:
       type: stream
       path: "%kernel.logs_dir%/dbal.log"
