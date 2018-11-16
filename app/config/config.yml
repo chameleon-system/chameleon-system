@@ -18,39 +18,9 @@ chameleon_system_java_script_minification:
   js_minifier_to_use: "jshrink"
 
 monolog:
-  # NOTE this channel list is not / must not be a complete list.
-  # It is only necessary here in advance for backwards-compatibility (ie users of "IPkgCmsCoreLog" and any Tdb or TCMS object).
-  channels:
-    - "core_standard"
-    - "core_security"
-    - "core_dbal"
-    - "core_cms_updates"
-    - "core_cronjobs"
-    - "core_api"
-
   handlers:
-    database:
-      type: service
-      id: cmsPkgCore.logHandler.database
-      channels:
-      - "core_security"
-      - "core_cms_updates"
-      - "core_cronjobs"
-      - "core_api"
-
-    database_for_fingers_crossed:
-      type: service
-      id: cmsPkgCore.logHandler.database
-
-    standard:
-      type: fingers_crossed
-      handler: database_for_fingers_crossed
-      channels:
-      - "core_standard"
-
-    dbal:
+    main:
       type: stream
-      path: "%kernel.logs_dir%/dbal.log"
-      channels:
-        - "core_dbal"
+      path: "%kernel.logs_dir%/%kernel.environment%.log"
       level: warning
+      formatter: chameleon_system_cms_core_log.formatter_with_stacktraces
