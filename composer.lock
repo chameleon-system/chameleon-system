@@ -44,16 +44,16 @@
         },
         {
             "name": "chameleon-system/chameleon-base",
-            "version": "6.2.4",
+            "version": "6.2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-base.git",
-                "reference": "a4da81c5456cef737fead5058c387c3775e057dc"
+                "reference": "9de16fc20c04d53dc167eb29dec5b4da6e74c251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/a4da81c5456cef737fead5058c387c3775e057dc",
-                "reference": "a4da81c5456cef737fead5058c387c3775e057dc",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/9de16fc20c04d53dc167eb29dec5b4da6e74c251",
+                "reference": "9de16fc20c04d53dc167eb29dec5b4da6e74c251",
                 "shasum": ""
             },
             "require": {
@@ -210,20 +210,20 @@
                 }
             ],
             "description": "The Chameleon System core.",
-            "time": "2018-11-15T15:03:54+00:00"
+            "time": "2018-11-19T16:05:37+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop",
-            "version": "6.2.4",
+            "version": "6.2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-shop.git",
-                "reference": "568c75db1683c81fa66964624d7688c7a4d1afbd"
+                "reference": "356e292f0dac08cfeab6ae9137d6c25b360511f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/568c75db1683c81fa66964624d7688c7a4d1afbd",
-                "reference": "568c75db1683c81fa66964624d7688c7a4d1afbd",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-shop/zipball/356e292f0dac08cfeab6ae9137d6c25b360511f5",
+                "reference": "356e292f0dac08cfeab6ae9137d6c25b360511f5",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "e-commerce",
                 "shop"
             ],
-            "time": "2018-11-15T12:20:08+00:00"
+            "time": "2018-11-19T15:52:43+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop-theme-bundle",
