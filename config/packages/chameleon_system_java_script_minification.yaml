@@ -1,0 +1,2 @@
+chameleon_system_java_script_minification:
+    js_minifier_to_use: "jshrink"

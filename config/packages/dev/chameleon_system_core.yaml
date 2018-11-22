@@ -1,0 +1,10 @@
+parameters:
+    chameleon_system_core.cache.cache_less_files: false
+    chameleon_system_core.cache.allow: false
+    chameleon_system_core.cache.default_max_age_in_seconds: 60
+    chameleon_system_core.resources.enable_external_resource_collection: false
+    chameleon_system_core.resources.enable_external_resource_collection_minify: false
+    chameleon_system_core.debug.debug_last_order: false
+    chameleon_system_core.cache.memcache_activate: true
+    chameleon_system_core.cache.memcache_use_fallback: false
+    chameleon_system_core.cache.include_cache_delete_trace_info: false

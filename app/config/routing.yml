@@ -1,3 +1,0 @@
-chameleon_system_view_renderer:
-    resource: "@ChameleonSystemViewRendererBundle/Resources/config/routing.yml"
-    type:     yaml

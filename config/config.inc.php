@@ -3,18 +3,6 @@
 if (!defined('_CONFIG_LOADED')) {
     define('_CONFIG_LOADED', true); // we do this so that this config is only called once...
 
-    $devMode = false;
-    if ('console' === REQUEST_PROTOCOL) {
-        $input = new \Symfony\Component\Console\Input\ArgvInput();
-        $env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
-        $devMode = 'prod' !== $env;
-    } else {
-        if ('.intra' === substr($_SERVER['HTTP_HOST'], -6)) {
-            $devMode = true;
-        }
-    }
-    define('_DEVELOPMENT_MODE', $devMode);
-
     /**
      * used to encode data. MAKE SURE TO SET A CUSTOM KEY FOR EVERY PROJECT!
      */

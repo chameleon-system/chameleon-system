@@ -1,0 +1,10 @@
+chameleon_system_core:
+    mailer:
+      host: "%mailer_host%"
+      user: "%mailer_user%"
+      password: "%mailer_password%"
+    mail_target_transformation_service:
+      enabled: "%chameleon_system_core.mail_target_transformation_service.enabled%"
+      target_mail: "%chameleon_system_core.mail_target_transformation_service.target_mail%"
+      subject_prefix: "%chameleon_system_core.mail_target_transformation_service.subject_prefix%"
+      white_list: "%chameleon_system_core.mail_target_transformation_service.white_list%"
