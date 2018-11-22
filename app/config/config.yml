@@ -16,11 +16,3 @@ chameleon_system_cms_text_field:
 
 chameleon_system_java_script_minification:
   js_minifier_to_use: "jshrink"
-
-monolog:
-  handlers:
-    main:
-      type: stream
-      path: "%kernel.logs_dir%/%kernel.environment%.log"
-      level: warning
-      formatter: chameleon_system_cms_core_log.formatter_with_stacktraces
