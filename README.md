@@ -2,9 +2,10 @@
     <a href="https://chameleonsystem.com" target="_blank">
         <img src="https://demo.chameleon-system.de/chameleon/mediapool/8/ae/chameleon-logo_id3834.png">
     </a>
-    <div>
+    <br />
+    <span>
         The E-Business Platform
-    </div>
+    </span>
 </p>
 
 Chameleon System is e-commerce and content management redefined: Flexible, based on Symfony, customer- and
