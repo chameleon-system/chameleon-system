@@ -39,7 +39,7 @@ Reporting an Issue or a Feature Request
 ---------------------------------------
 
 Please report issues and feature requests at the official [GitHub repository](https://github.com/chameleon-system/chameleon-system/issues).
-Issues for the basic Chameleon repositories chameleon-base and chameleon-shop are also centralized in this repository.
+Issues for the Chameleon repositories chameleon-base and chameleon-shop are also handled centrally in this repository.
 
 Security Issues
 ---------------
