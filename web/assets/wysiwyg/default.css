@@ -1,5 +1,7 @@
-@import "/assets/less/chameleon.css";
-@import "./reset.css";
+body {
+    /* reset any current */
+    background: transparent none;
+}
 
 img.img-rounded, img.img-circle, img.img-polaroid {}
 
