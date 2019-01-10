@@ -1,9 +1,6 @@
 imports:
    - { resource: config.yml }
 
-chameleon_system_debug:
-  backtrace_enabled: false
-
 chameleon_system_twig_debug:
   enabled: true
 
