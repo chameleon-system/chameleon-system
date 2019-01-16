@@ -1,9 +1,6 @@
 imports:
     - { resource: parameters.yml }
 
-framework:
-  secret:          "%secret%"
-
 parameters:
   chameleon_system_shop.article_list.view_to_list_view_mapping:
     rightNoticeList:           "/common/lists/listStandardShopArticle.html.twig"
@@ -16,3 +13,20 @@ chameleon_system_cms_text_field:
 
 chameleon_system_java_script_minification:
   js_minifier_to_use: "jshrink"
+
+doctrine:
+  dbal:
+    host:           '%database_host%'
+    port:           '%database_port%'
+    dbname:         '%database_name%'
+    user:           '%database_user%'
+    password:       '%database_password%'
+    driver:         'pdo_mysql'
+    server_version: '5.7'
+    charset:        'utf8'
+    default_table_options:
+      charset: 'utf8'
+      collate: 'utf8_unicode_ci'
+
+framework:
+  secret:          "%secret%"

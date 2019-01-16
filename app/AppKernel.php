@@ -30,6 +30,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
         $bundles = array(
             new \AppBundle\AppBundle(),
 
+            new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
