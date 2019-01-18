@@ -15,3 +15,8 @@ parameters:
   chameleon_system_core.cache.memcache_activate: true
   chameleon_system_core.cache.memcache_use_fallback: false
   chameleon_system_core.cache.include_cache_delete_trace_info: false
+
+monolog:
+  handlers:
+    main:
+      level: debug
