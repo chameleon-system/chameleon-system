@@ -30,3 +30,11 @@ doctrine:
 
 framework:
   secret:          "%secret%"
+
+monolog:
+  handlers:
+    main:
+      type: stream
+      path: "%kernel.logs_dir%/%kernel.environment%.log"
+      level: warning
+      formatter: chameleon_system_cms_core_log.formatter_with_stacktraces
