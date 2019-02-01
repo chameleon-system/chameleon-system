@@ -67,6 +67,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ExtranetBundle\ChameleonSystemExtranetBundle(),
             new \ChameleonSystem\ExtranetRegistrationGuestBundle\ChameleonSystemExtranetRegistrationGuestBundle(),
             new \ChameleonSystem\GenericTableExportBundle\ChameleonSystemGenericTableExportBundle(),
+            new \ChameleonSystem\ImageCropBundle\ChameleonSystemImageCropBundle(),
             new \ChameleonSystem\ImageHotspotBundle\ChameleonSystemImageHotspotBundle(),
             new \ChameleonSystem\JavaScriptMinificationBundle\ChameleonSystemJavaScriptMinificationBundle(),
             new \ChameleonSystem\MediaManagerBundle\ChameleonSystemMediaManagerBundle(),
