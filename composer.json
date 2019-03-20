@@ -12,8 +12,8 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-shop": "dev-master",
-        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
+        "chameleon-system/chameleon-shop": "~6.3.0",
+        "chameleon-system/chameleon-shop-theme-bundle": "~6.3.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "symfony/monolog-bundle": "~2.4|~3.0"
@@ -23,7 +23,7 @@
         "sensio/generator-bundle": "~3.0"
 
         ,
-        "chameleon-system/chameleon-base": "dev-master"
+        "chameleon-system/chameleon-base": "~6.3.0"
     },
     "autoload": {
         "classmap": [
