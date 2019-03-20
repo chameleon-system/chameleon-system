@@ -31,6 +31,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \AppBundle\AppBundle(),
 
             new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
+            new \Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -75,7 +76,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\MultiModuleBundle\ChameleonSystemMultiModuleBundle(),
             new \ChameleonSystem\NewsletterBundle\ChameleonSystemNewsletterBundle(),
             new \ChameleonSystem\PkgCoreBundle\ChameleonSystemPkgCoreBundle(),
-            new \ChameleonSystem\RevisionManagementBundle\ChameleonSystemRevisionManagementBundle(),
             new \ChameleonSystem\SanityCheckBundle\ChameleonSystemSanityCheckBundle(),
             new \ChameleonSystem\SanityCheckChameleonBundle\ChameleonSystemSanityCheckChameleonBundle(),
             new \ChameleonSystem\SearchBundle\ChameleonSystemSearchBundle(),
