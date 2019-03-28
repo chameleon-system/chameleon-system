@@ -8,9 +8,6 @@ parameters:
     standardEmptyOnNoArticles: "/common/lists/listScrollShopArticle.html.twig"
     standard:                  "/common/lists/listScrollShopArticle.html.twig"
 
-chameleon_system_cms_text_field:
-  allow_script_tags: false
-
 chameleon_system_java_script_minification:
   js_minifier_to_use: "jshrink"
 
