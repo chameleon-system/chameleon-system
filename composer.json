@@ -23,7 +23,9 @@
         "sensio/generator-bundle": "~3.0"
 
         ,
-        "chameleon-system/chameleon-base": "dev-master"
+        "chameleon-system/chameleon-base": "dev-master",
+        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/sanitycheck-bundle": "dev-master"
     },
     "autoload": {
         "classmap": [
