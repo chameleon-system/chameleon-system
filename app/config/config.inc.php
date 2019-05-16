@@ -4,14 +4,13 @@ if (!defined('_CONFIG_LOADED')) {
     define('_CONFIG_LOADED', true); // we do this so that this config is only called once...
 
     $devMode = false;
+    $symfonyEnvironment = getenv('APP_ENV') ?: getenv('SYMFONY_ENV') ?: false;
     if ('console' === REQUEST_PROTOCOL) {
         $input = new \Symfony\Component\Console\Input\ArgvInput();
-        $env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
+        $env = $input->getParameterOption(array('--env', '-e'), $symfonyEnvironment ?: 'dev');
         $devMode = 'prod' !== $env;
     } else {
-        if ('.intra' === substr($_SERVER['HTTP_HOST'], -6)) {
-            $devMode = true;
-        }
+        $devMode = 'prod' !== $symfonyEnvironment;
     }
     define('_DEVELOPMENT_MODE', $devMode);
 
