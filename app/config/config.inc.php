@@ -9,7 +9,7 @@ if (!defined('_CONFIG_LOADED')) {
         $input = new \Symfony\Component\Console\Input\ArgvInput();
         $env = $input->getParameterOption(array('--env', '-e'), $symfonyEnvironment ?: 'dev');
         $devMode = 'prod' !== $env;
-    } else {
+    } else if (false !== $symfonyEnvironment) {
         $devMode = 'prod' !== $symfonyEnvironment;
     }
     define('_DEVELOPMENT_MODE', $devMode);
