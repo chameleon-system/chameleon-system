@@ -7,7 +7,6 @@
 
 $data = TCMSLogChange::createMigrationQueryData('pkg_cms_text_block', 'de')
   ->setFields([
-      'systemname' => 'telephone_order_info_text',
 //      'name' => 'Telefonbestellunginfotext',
       'content' => '<p><strong>Wir sind für Sie da:</strong></p>
 
@@ -30,14 +29,13 @@ $data = TCMSLogChange::createMigrationQueryData('pkg_cms_text_block', 'de')
 ',
   ])
   ->setWhereEquals([
-      'id' => 'adad85ec-cfd7-6d7b-ebd6-22fdf751c038',
+      'systemname' => 'telephone_order_info_text',
   ])
 ;
 TCMSLogChange::update(__LINE__, $data);
 
 $data = TCMSLogChange::createMigrationQueryData('pkg_cms_text_block', 'en')
   ->setFields([
-      'systemname' => 'telephone_order_info_text',
 //      'name' => 'Order by phone',
       'content' => '<p><strong>We are there for you:</strong></p>
 
@@ -60,7 +58,7 @@ $data = TCMSLogChange::createMigrationQueryData('pkg_cms_text_block', 'en')
 ',
   ])
   ->setWhereEquals([
-      'id' => 'adad85ec-cfd7-6d7b-ebd6-22fdf751c038',
+      'systemname' => 'telephone_order_info_text',
   ])
 ;
 TCMSLogChange::update(__LINE__, $data);
