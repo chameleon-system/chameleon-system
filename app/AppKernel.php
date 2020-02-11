@@ -31,7 +31,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \AppBundle\AppBundle(),
 
             new \Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
-            new \Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
+            //new \Doctrine\Bundle\DoctrineCacheBundle\DoctrineCacheBundle(),
             new \Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
@@ -111,8 +111,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
 
-            $bundles[] = new \Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
-            $bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
+            //$bundles[] = new \Sensio\Bundle\DistributionBundle\SensioDistributionBundle();
+            //$bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
 
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
         }

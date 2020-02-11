@@ -11,16 +11,31 @@
             "role": "Company"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:bestform/chameleon-shop.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:bestform/chameleon-base.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:bestform/chameleon-shop-theme-bundle.git"
+        }
+    ],
     "require": {
-        "chameleon-system/chameleon-shop": "dev-master",
-        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
+        "chameleon-system/chameleon-shop": "dev-symfony44-upgrade",
+        "chameleon-system/chameleon-base": "dev-symfony44-upgrade",
+        "chameleon-system/sanitycheck-bundle": "dev-master",
+        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/chameleon-shop-theme-bundle": "dev-symfony44-upgrade",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
-        "symfony/monolog-bundle": "~2.4|~3.0"
+        "sensio/framework-extra-bundle": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "@stable",
-        "sensio/generator-bundle": "~3.0"
+        "phpunit/phpunit": "@stable"
     },
     "autoload": {
         "classmap": [
