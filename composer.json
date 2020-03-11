@@ -23,18 +23,25 @@
         {
             "type": "vcs",
             "url": "git@github.com:bestform/chameleon-shop-theme-bundle.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:bestform/ChameleonSystemGraphQLBundle.git"
         }
     ],
     "require": {
-        "chameleon-system/chameleon-shop": "dev-symfony44-upgrade",
         "chameleon-system/chameleon-base": "dev-symfony44-upgrade",
-        "chameleon-system/sanitycheck-bundle": "dev-master",
-        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/chameleon-shop": "dev-symfony44-upgrade",
         "chameleon-system/chameleon-shop-theme-bundle": "dev-symfony44-upgrade",
+        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/sanitycheck-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "*"
+        "overblog/graphql-bundle": "^0.13.1",
+        "sensio/framework-extra-bundle": "*",
+        "chameleon-system/graphql-bundle": "dev-master"
     },
     "require-dev": {
+        "overblog/graphiql-bundle": "^0.2.1",
         "phpunit/phpunit": "@stable"
     },
     "autoload": {
@@ -44,7 +51,8 @@
             "src/framework"
         ],
         "psr-4": {
-            "AppBundle\\": "src/AppBundle"
+            "AppBundle\\": "src/AppBundle",
+            "ChameleonSystem\\GraphQLBundle\\": "src/GraphQLBundle"
         }
     },
     "scripts": {

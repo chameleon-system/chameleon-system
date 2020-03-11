@@ -1,3 +1,7 @@
 chameleon_system_view_renderer:
     resource: "@ChameleonSystemViewRendererBundle/Resources/config/routing.yml"
     type:     yaml
+
+chameleon_system_graphql:
+    resource: "@ChameleonSystemGraphQLBundle/Resources/config/routing.yml"
+    type: yaml

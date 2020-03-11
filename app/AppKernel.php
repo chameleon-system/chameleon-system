@@ -104,6 +104,9 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
 
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new ChameleonSystem\GraphQLBundle\ChameleonSystemGraphQLBundle(),
+            new Overblog\GraphQLBundle\OverblogGraphQLBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
@@ -115,6 +118,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             //$bundles[] = new \Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle();
 
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new Overblog\GraphiQLBundle\OverblogGraphiQLBundle();
         }
 
         return $bundles;

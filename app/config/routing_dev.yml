@@ -12,3 +12,7 @@ _errors:
 
 _main:
     resource: routing.yml
+
+chameleon_system_graphql_dev:
+    resource: "@ChameleonSystemGraphQLBundle/Resources/config/routing_dev.yml"
+    type: yaml
