@@ -37,4 +37,6 @@ if (!defined('_CONFIG_LOADED')) {
     if (!defined('CHAMELEON_ENABLE_FLUSHING')) {
         define('CHAMELEON_ENABLE_FLUSHING', true);
     }
+
+    define('PKG_EXTRANET_USE_CASE_INSENSITIVE_LOGIN_NAMES', true);
 }
