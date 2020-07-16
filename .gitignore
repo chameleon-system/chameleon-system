@@ -14,6 +14,7 @@ web/assets/less/chameleon.css
 web/bundles/
 web/chameleon/mediapool/*
 !web/chameleon/mediapool/.gitkeep
+var/
 
 web/chameleon/outbox/*
 !web/chameleon/outbox/static/

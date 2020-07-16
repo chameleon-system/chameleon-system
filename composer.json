@@ -15,12 +15,10 @@
         "chameleon-system/chameleon-shop": "dev-master",
         "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
-        "symfony/monolog-bundle": "~2.4|~3.0"
+        "sensio/framework-extra-bundle": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "@stable",
-        "sensio/generator-bundle": "~3.0"
+        "phpunit/phpunit": "@stable"
     },
     "autoload": {
         "classmap": [
