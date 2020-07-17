@@ -1,5 +1,5 @@
 parameters:
-    secret: !ThisTokenIsNotSoSecretChangeIt!
+    secret: "!ThisTokenIsNotSoSecretChangeIt!"
     chameleon_system_core.debug.show_view_source_html_hints: true
     chameleon_system_core.development_email: "the developer's mail address"
 
