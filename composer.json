@@ -36,16 +36,15 @@
     "scripts": {
         "symfony-scripts": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "app/console cache:clear --env prod",
+            "app/console cache:clear",
+            "app/console assets:install --symlink --relative web"
         ],
         "post-install-cmd": [
             "@symfony-scripts"
         ],
         "post-update-cmd": [
-            "@symfony-scripts",
-            "ChameleonSystem\\DistributionBundle\\VersionCheck\\PostUpdateVersionCheck::checkVersion"
+            "@symfony-scripts"
         ]
     },
     "config": {
