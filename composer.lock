@@ -44,16 +44,16 @@
         },
         {
             "name": "chameleon-system/chameleon-base",
-            "version": "7.0.9",
+            "version": "7.0.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chameleon-system/chameleon-base.git",
-                "reference": "053ba922c37243c790f05af9d55c30b71a1528af"
+                "reference": "7a6fc5cab5073e79bbe010429657785e579f06a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/053ba922c37243c790f05af9d55c30b71a1528af",
-                "reference": "053ba922c37243c790f05af9d55c30b71a1528af",
+                "url": "https://api.github.com/repos/chameleon-system/chameleon-base/zipball/7a6fc5cab5073e79bbe010429657785e579f06a5",
+                "reference": "7a6fc5cab5073e79bbe010429657785e579f06a5",
                 "shasum": ""
             },
             "require": {
@@ -216,7 +216,7 @@
                 }
             ],
             "description": "The Chameleon System core.",
-            "time": "2020-07-20T06:00:56+00:00"
+            "time": "2020-07-30T12:48:28+00:00"
         },
         {
             "name": "chameleon-system/chameleon-shop",
