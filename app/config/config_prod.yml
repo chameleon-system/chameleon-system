@@ -27,8 +27,12 @@ monolog:
     cronjob:
       type: stream
       path: "%kernel.logs_dir%/%kernel.environment%.log"
-      level: info
       channels: ["cronjob"]
+    cronjob_filter:
+      type: filter
+      handler: cronjob
+      max_level: warning
+      min_level: info
     console:
       type: console
       process_psr_3_messages: false
