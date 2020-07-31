@@ -23,6 +23,12 @@ monolog:
       type: stream
       path: "%kernel.logs_dir%/%kernel.environment%.log"
       level: debug
+      formatter: chameleon_system_cms_core_log.formatter_with_stacktraces
+    cronjob:
+      type: stream
+      path: "%kernel.logs_dir%/%kernel.environment%.log"
+      level: info
+      channels: ["cronjob"]
     console:
       type: console
       process_psr_3_messages: false
