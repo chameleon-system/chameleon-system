@@ -1,0 +1,26 @@
+# Codeception Test Suite Configuration
+#
+# Suite for acceptance tests.
+# Perform tests in browser using the WebDriver or PhpBrowser.
+# If you need both WebDriver and PHPBrowser tests - create a separate suite.
+
+actor: AcceptanceTester
+modules:
+    enabled:
+        - WebDriver:
+                url: 'http://dummy.local/'
+                browser: chrome
+                window_size: 1024x3000
+        - \Helper\Acceptance
+        - \Module\Bootstrap
+        - Db:
+            dsn: 'mysql:host=%database_host%;dbname=%database_name%'
+            user: '%database_user%'
+            password: '%database_password%'
+step_decorators: ~
+env:
+  local:
+    modules:
+      config:
+        WebDriver:
+          url: 'http://dummy.local/'

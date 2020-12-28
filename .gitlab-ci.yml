@@ -1,0 +1,29 @@
+image: docker.esono.de/devops/php-dev-tools:7.4
+
+stages:
+  - test
+#  - deploy
+#  - notification
+
+before_script:
+  - apt-get update -yqq
+  - apt-get install -yqq
+  #  - composer install
+#  - curl --location --output /usr/local/bin/phpunit https://phar.phpunit.de/phpunit.phar
+  - curl --location --output /usr/local/bin/codecept https://codeception.com/codecept.phar
+  - chmod +x /usr/local/bin/phpunit
+#  - chmod +x /usr/local/bin/codecept
+
+#unit_test:
+#  stage: test
+#  script:
+#    - phpunit --colors --debug --coverage-text
+#  only:
+#    - 7.0.x
+
+codeception_test:
+  stage: test
+  script:
+    - codecept run -c codeception.yml
+  only:
+    - 7.0.x
