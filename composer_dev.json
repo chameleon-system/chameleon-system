@@ -12,18 +12,16 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-base": "dev-master",
-        "chameleon-system/chameleon-shop": "dev-master",
-        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
-        "chameleon-system/sanitycheck": "dev-master",
-        "chameleon-system/sanitycheck-bundle": "dev-master",
+        "chameleon-system/chameleon-shop": "7.1.x@dev",
+        "chameleon-system/chameleon-base": "7.1.x@dev",
+        "chameleon-system/sanitycheck-bundle": "7.1.x@dev",
+        "chameleon-system/sanitycheck": "7.1.x@dev",
+        "chameleon-system/chameleon-shop-theme-bundle": "7.1.x@dev",
         "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "^3.0.2",
-        "symfony/monolog-bundle": "~2.4|~3.0"
+        "sensio/framework-extra-bundle": "*"
     },
     "require-dev": {
-        "phpunit/phpunit": "@stable",
-        "sensio/generator-bundle": "~3.0"
+        "phpunit/phpunit": "@stable"
     },
     "autoload": {
         "classmap": [
