@@ -12,11 +12,8 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-shop": "7.1.x@dev",
-        "chameleon-system/chameleon-base": "7.1.x@dev",
-        "chameleon-system/sanitycheck-bundle": "7.1.x@dev",
-        "chameleon-system/sanitycheck": "7.1.x@dev",
-        "chameleon-system/chameleon-shop-theme-bundle": "7.1.x@dev",
+        "chameleon-system/chameleon-shop": "~7.1.0",
+        "chameleon-system/chameleon-shop-theme-bundle": "~7.1.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/framework-extra-bundle": "*"
     },
