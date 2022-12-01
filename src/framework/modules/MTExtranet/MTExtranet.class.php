@@ -11,7 +11,7 @@
 
 class MTExtranet extends MTExtranetCore
 {
-    protected function PrepareSubmittedData(&$aData)
+    protected function PrepareSubmittedData($aData)
     {
         parent::PrepareSubmittedData($aData);
         $oShop = TdbShop::GetInstance();
