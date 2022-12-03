@@ -23,14 +23,23 @@
         {
             "type": "vcs",
             "url": "https://github.com/rnuernberg/chameleon-base.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rnuernberg/sanitycheck.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/rnuernberg/sanitycheck-bundle.git"
         }
     ],
     "require": {
-        "chameleon-system/chameleon-base": "7.1.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop": "7.1.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop-theme-bundle": "7.1.x-dev as 7.1.99",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "*"
+        "chameleon-system/sanitycheck-bundle": "7.2.x-dev as 7.1.99",
+        "chameleon-system/sanitycheck": "7.2.x-dev as 7.1.99",
+        "chameleon-system/chameleon-base": "7.2.x-dev as 7.1.99",
+        "chameleon-system/chameleon-shop": "7.2.x-dev as 7.1.99",
+        "chameleon-system/chameleon-shop-theme-bundle": "7.2.x-dev as 7.1.99",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable"

@@ -100,13 +100,10 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
             new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
-            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
-
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new \ChameleonSystem\DebugBundle\ChameleonSystemDebugBundle();
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
