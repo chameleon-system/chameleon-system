@@ -13,36 +13,45 @@
     ],
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/rnuernberg/chameleon-shop.git"
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-shop"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/rnuernberg/chameleon-shop-theme-bundle.git"
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-shop-theme-bundle"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/rnuernberg/chameleon-base.git"
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-base",
+            "options": {
+                "versions": {
+                    "chameleon-system/chameleon-base": "7.2.x-dev"
+                }
+            }
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/rnuernberg/sanitycheck.git"
+            "type": "path",
+            "url": "packages/chameleon-system/sanitycheck"
         },
         {
-            "type": "vcs",
-            "url": "https://github.com/rnuernberg/sanitycheck-bundle.git"
+            "type": "path",
+            "url": "packages/chameleon-system/sanitycheck-bundle"
         }
     ],
     "require": {
-        "chameleon-system/sanitycheck-bundle": "7.2.x-dev as 7.1.99",
-        "chameleon-system/sanitycheck": "7.2.x-dev as 7.1.99",
         "chameleon-system/chameleon-base": "7.2.x-dev as 7.1.99",
         "chameleon-system/chameleon-shop": "7.2.x-dev as 7.1.99",
         "chameleon-system/chameleon-shop-theme-bundle": "7.2.x-dev as 7.1.99",
         "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "@stable"
+        "phpunit/phpunit": "@stable",
+        "symfony/debug-bundle": "^5.4",
+        "symfony/maker-bundle": "^1.48",
+        "symfony/stopwatch": "^5.4",
+        "symfony/var-dumper": "^5.4",
+        "symfony/var-exporter": "^5.4",
+        "symfony/web-profiler-bundle": "^5.4"
     },
     "autoload": {
         "classmap": [

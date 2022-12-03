@@ -75,8 +75,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\MultiModuleBundle\ChameleonSystemMultiModuleBundle(),
             new \ChameleonSystem\NewsletterBundle\ChameleonSystemNewsletterBundle(),
             new \ChameleonSystem\PkgCoreBundle\ChameleonSystemPkgCoreBundle(),
-            new \ChameleonSystem\SanityCheckBundle\ChameleonSystemSanityCheckBundle(),
-            new \ChameleonSystem\SanityCheckChameleonBundle\ChameleonSystemSanityCheckChameleonBundle(),
             new \ChameleonSystem\SearchBundle\ChameleonSystemSearchBundle(),
             new \ChameleonSystem\ShopAffiliateBundle\ChameleonSystemShopAffiliateBundle(),
             new \ChameleonSystem\ShopArticleDetailPagingBundle\ChameleonSystemShopArticleDetailPagingBundle(),
