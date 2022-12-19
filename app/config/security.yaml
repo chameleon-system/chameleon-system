@@ -34,7 +34,7 @@ security:
   # Note: Only the *first* access control that matches will be used
   access_control:
     - { path: ^/cms/login, roles: PUBLIC_ACCESS }
-    - { path: ^/cms, roles: ROLE_ADMIN }
+    - { path: ^/cms, roles: ROLE_CMS_USER }
 
    #- { path: ^/cms, roles: ROLE_ADMIN }
   # - { path: ^/profile, roles: ROLE_USER }
