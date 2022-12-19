@@ -42,7 +42,8 @@
         "chameleon-system/chameleon-base": "7.2.x-dev as 7.1.99",
         "chameleon-system/chameleon-shop": "7.2.x-dev as 7.1.99",
         "chameleon-system/chameleon-shop-theme-bundle": "7.2.x-dev as 7.1.99",
-        "incenteev/composer-parameter-handler": "~2.0"
+        "incenteev/composer-parameter-handler": "~2.0",
+        "symfony/security-bundle": "^5.4"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",

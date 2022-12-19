@@ -98,13 +98,18 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
             new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
-            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle()
+            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
+            new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
+            new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
+            new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new \Symfony\Bundle\MakerBundle\MakerBundle();
         }
 
         return $bundles;
