@@ -18,6 +18,7 @@ security:
     backend:
       pattern: ^/cms
       lazy: false
+      anonymous: true
       provider: chameleon_backend_user_provider
       logout:
         path: app_logout
