@@ -7,5 +7,5 @@ chameleon_system_security:
     type:     annotation
 
 app_logout:
-    path: /logout
+    path: /cms/logout
     methods: GET

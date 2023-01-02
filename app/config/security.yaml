@@ -23,6 +23,7 @@ security:
       provider: chameleon_backend_user_provider
       logout:
         path: app_logout
+        target: /cms
       form_login:
         # "app_login" is the name of the route created previously
         login_path: cms_login
