@@ -16,6 +16,7 @@ security:
       pattern: ^/(_(profiler|wdt)|css|images|js)/
       security: false
     backend:
+      switch_user: {role: CMS_RIGHT_CMS_AUTO_SWITCH_TO_ANY_USER}
       pattern: ^/cms
       lazy: false
       anonymous: true
