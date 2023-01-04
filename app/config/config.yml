@@ -1,6 +1,5 @@
 imports:
     - { resource: parameters.yml }
-    - { resource: security.yaml }
 
 parameters:
   chameleon_system_shop.article_list.view_to_list_view_mapping:
