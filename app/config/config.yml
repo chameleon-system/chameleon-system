@@ -27,3 +27,26 @@ doctrine:
 
 framework:
   secret:          "%secret%"
+
+# config/packages/knpu_oauth2_client.yaml
+knpu_oauth2_client:
+  clients:
+    # the key "facebook_main" can be anything, it
+    # will create a service: "knpu.oauth2.client.facebook_main"
+    google_main:
+      # this will be one of the supported types
+      type: google
+      client_id: '531419934037-t49a8kc843nj70nerrm0olupu7878lu7.apps.googleusercontent.com'
+      client_secret: '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'
+      # the route that you're redirected to after
+      # see the controller example below
+      redirect_route: connect_google_check
+      redirect_params: {}
+      hosted_domain: 'esono.de'
+
+chameleon_system_security:
+  googleLogin:
+    enabled: true
+    domainToBaseUserMapping:
+      - domain: 'esono.de'
+        value: admin
