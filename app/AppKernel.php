@@ -75,8 +75,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\MultiModuleBundle\ChameleonSystemMultiModuleBundle(),
             new \ChameleonSystem\NewsletterBundle\ChameleonSystemNewsletterBundle(),
             new \ChameleonSystem\PkgCoreBundle\ChameleonSystemPkgCoreBundle(),
-            new \ChameleonSystem\SanityCheckBundle\ChameleonSystemSanityCheckBundle(),
-            new \ChameleonSystem\SanityCheckChameleonBundle\ChameleonSystemSanityCheckChameleonBundle(),
             new \ChameleonSystem\SearchBundle\ChameleonSystemSearchBundle(),
             new \ChameleonSystem\ShopAffiliateBundle\ChameleonSystemShopAffiliateBundle(),
             new \ChameleonSystem\ShopArticleDetailPagingBundle\ChameleonSystemShopArticleDetailPagingBundle(),
@@ -100,13 +98,10 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
             new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
-            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
-
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new \ChameleonSystem\DebugBundle\ChameleonSystemDebugBundle();
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();

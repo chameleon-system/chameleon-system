@@ -54,7 +54,7 @@ class TCMSWizardStepEditUserProfile extends TdbCmsWizardStep
      *
      * @return array
      */
-    protected function &GetAdditionalViewVariables($sViewName, $sViewType)
+    protected function GetAdditionalViewVariables($sViewName, $sViewType)
     {
         $aViewVariables = array();
 
