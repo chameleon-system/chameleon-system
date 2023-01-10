@@ -12,11 +12,11 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-shop": "7.1.x@dev",
-        "chameleon-system/chameleon-base": "7.1.x@dev",
-        "chameleon-system/sanitycheck-bundle": "7.1.x@dev",
-        "chameleon-system/sanitycheck": "7.1.x@dev",
-        "chameleon-system/chameleon-shop-theme-bundle": "7.1.x@dev",
+        "chameleon-system/chameleon-shop": "dev-master",
+        "chameleon-system/chameleon-base": "dev-master",
+        "chameleon-system/sanitycheck-bundle": "dev-master",
+        "chameleon-system/sanitycheck": "dev-master",
+        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/framework-extra-bundle": "*"
     },
