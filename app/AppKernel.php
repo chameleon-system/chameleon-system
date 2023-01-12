@@ -98,7 +98,9 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
             new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
-            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle()
+            new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
+            new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
+            new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
