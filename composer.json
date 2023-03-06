@@ -22,12 +22,7 @@
         },
         {
             "type": "path",
-            "url": "packages/chameleon-system/chameleon-base",
-            "options": {
-                "versions": {
-                    "chameleon-system/chameleon-base": "7.2.x-dev"
-                }
-            }
+            "url": "packages/chameleon-system/chameleon-base"
         },
         {
             "type": "path",
@@ -39,9 +34,9 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-base": "7.2.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop": "7.2.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop-theme-bundle": "7.2.x-dev as 7.1.99",
+        "chameleon-system/chameleon-base": "dev-master",
+        "chameleon-system/chameleon-shop": "dev-master",
+        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0",
         "symfony/security-bundle": "^5.4"
     },
