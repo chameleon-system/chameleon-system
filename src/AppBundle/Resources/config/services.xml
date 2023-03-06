@@ -4,12 +4,5 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-<services>
-    <service id="AppBundle\Controller\TestCommand">
-        <argument type="service" id="doctrine" />
-        <argument type="service" id="database_connection" />
-        <tag name="console.command"/>
-    </service>
-
-</services>
+<services />
 </container>
