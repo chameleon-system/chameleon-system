@@ -49,4 +49,4 @@ chameleon_system_security:
     enabled: true
     domainToBaseUserMapping:
       - domain: 'esono.de'
-        value: admin
+        cloneUserPermissionsFrom: admin
