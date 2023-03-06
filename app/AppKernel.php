@@ -102,6 +102,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
+            new \ChameleonSystem\DataAccessBundle\ChameleonSystemDataAccessBundle(),
 
         );
 
