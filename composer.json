@@ -25,7 +25,7 @@
             "url": "packages/chameleon-system/chameleon-base",
             "options": {
                 "versions": {
-                    "chameleon-system/chameleon-base": "7.2.x-dev"
+                    "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models"
                 }
             }
         },
@@ -39,14 +39,16 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-base": "7.2.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop": "7.2.x-dev as 7.1.99",
-        "chameleon-system/chameleon-shop-theme-bundle": "7.2.x-dev as 7.1.99",
+        "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models as dev-master",
+        "chameleon-system/chameleon-shop": "dev-master",
+        "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
+        "easycorp/easyadmin-bundle": "^4.6",
         "incenteev/composer-parameter-handler": "~2.0",
         "symfony/security-bundle": "^5.4"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",
+        "rector/rector": "^0.15.7",
         "symfony/debug-bundle": "^5.4",
         "symfony/maker-bundle": "^1.48",
         "symfony/stopwatch": "^5.4",
@@ -58,7 +60,8 @@
         "classmap": [
             "app/AppKernel.php",
             "src/extensions",
-            "src/framework"
+            "src/framework",
+            "var/autoclasses"
         ],
         "psr-4": {
             "AppBundle\\": "src/AppBundle"
