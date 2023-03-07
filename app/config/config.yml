@@ -36,8 +36,6 @@ knpu_oauth2_client:
     google_main:
       # this will be one of the supported types
       type: google
-      client_id: '531419934037-t49a8kc843nj70nerrm0olupu7878lu7.apps.googleusercontent.com'
-      client_secret: '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'
       # the route that you're redirected to after
       # see the controller example below
       redirect_route: connect_google_check
