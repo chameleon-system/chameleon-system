@@ -39,12 +39,10 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models as dev-master",
+      "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models as dev-master",
         "chameleon-system/chameleon-shop": "dev-master",
         "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
-        "easycorp/easyadmin-bundle": "^4.6",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "symfony/security-bundle": "^5.4"
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",

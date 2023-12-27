@@ -30,3 +30,29 @@ doctrine:
 
 framework:
   secret:          "%secret%"
+
+# config/packages/knpu_oauth2_client.yaml
+# if you want to enable this, you need to get register the website under https://console.cloud.google.com/apis/credentials
+# and provide the client_id and client_secret. You also need to enable `chameleon_system_security.google_login.enabled`
+# and configure it.
+#knpu_oauth2_client:
+#  clients:
+#    # the key "facebook_main" can be anything, it
+#    # will create a service: "knpu.oauth2.client.facebook_main"
+#    google_main:
+#      # this will be one of the supported types
+#      type: google
+#      # the route that you're redirected to after
+#      # see the controller example below
+#      redirect_route: connect_google_check
+#      redirect_params: {}
+#      hosted_domain: 'esono.de'
+#      client_id: ~
+#      client_secret: ~
+#
+#chameleon_system_security:
+#  google_login:
+#    enabled: true
+#    domain_to_base_user_mapping:
+#      - domain: 'esono.de'
+#        clone_user_permissions_from: admin
