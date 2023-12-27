@@ -15,8 +15,7 @@
         "chameleon-system/chameleon-base": "dev-master",
         "chameleon-system/chameleon-shop": "dev-master",
         "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "symfony/security-bundle": "^5.4"
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
         "phpunit/phpunit": "@stable",

@@ -9,6 +9,7 @@
  * file that was distributed with this source code.
  */
 
+use KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
@@ -102,6 +103,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
+            new KnpUOAuth2ClientBundle()
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
