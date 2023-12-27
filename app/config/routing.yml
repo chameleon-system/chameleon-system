@@ -1,3 +1,11 @@
 chameleon_system_view_renderer:
     resource: "@ChameleonSystemViewRendererBundle/Resources/config/routing.yml"
     type:     yaml
+
+chameleon_system_security:
+    resource: "@ChameleonSystemSecurityBundle/src/Controller/"
+    type:     annotation
+
+app_logout:
+    path: /cms/logout
+    methods: GET

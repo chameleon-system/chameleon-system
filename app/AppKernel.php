@@ -108,6 +108,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();
+            $bundles[] = new \Symfony\Bundle\MakerBundle\MakerBundle();
         }
 
         return $bundles;
