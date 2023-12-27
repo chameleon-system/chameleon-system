@@ -23,15 +23,9 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. Windows 8, Ubuntu Linux]
+**Test system information (if applicable)**
+ - OS: [e.g. Windows 8, Ubuntu Linux, Android version]
  - Browser [e.g. Chrome, Safari]
- - Version [e.g. 62]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, Safari]
  - Version [e.g. 62]
 
 **Technical details**

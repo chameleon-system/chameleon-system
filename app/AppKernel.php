@@ -35,6 +35,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
             new \Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+            new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
 
             new \ChameleonSystem\AmazonPaymentBundle\ChameleonSystemAmazonPaymentBundle(),
             new \ChameleonSystem\AtomicLockBundle\ChameleonSystemAtomicLockBundle(),
@@ -99,10 +100,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
-            new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
-
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
