@@ -103,6 +103,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
+            new \ChameleonSystem\DataAccessBundle\ChameleonSystemDataAccessBundle(),
             new KnpUOAuth2ClientBundle()
 
         );

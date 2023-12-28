@@ -1,5 +1,6 @@
 imports:
     - { resource: parameters.yml }
+    - { resource: "@ChameleonSystemAutoclassesBundle/Resources/config/table-mapping.yaml" }
 
 parameters:
   chameleon_system_shop.article_list.view_to_list_view_mapping:
@@ -12,6 +13,8 @@ chameleon_system_java_script_minification:
   js_minifier_to_use: "jshrink"
 
 doctrine:
+  orm:
+    auto_mapping: true
   dbal:
     host:           '%database_host%'
     port:           '%database_port%'

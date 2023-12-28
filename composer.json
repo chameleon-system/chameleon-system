@@ -11,8 +11,35 @@
             "role": "Company"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-shop"
+        },
+        {
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-shop-theme-bundle"
+        },
+        {
+            "type": "path",
+            "url": "packages/chameleon-system/chameleon-base",
+            "options": {
+                "versions": {
+                    "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models"
+                }
+            }
+        },
+        {
+            "type": "path",
+            "url": "packages/chameleon-system/sanitycheck"
+        },
+        {
+            "type": "path",
+            "url": "packages/chameleon-system/sanitycheck-bundle"
+        }
+    ],
     "require": {
-        "chameleon-system/chameleon-base": "dev-master",
+      "chameleon-system/chameleon-base": "dev-59244-doctrine-data-models as dev-master",
         "chameleon-system/chameleon-shop": "dev-master",
         "chameleon-system/chameleon-shop-theme-bundle": "dev-master",
         "incenteev/composer-parameter-handler": "~2.0"
@@ -30,7 +57,8 @@
         "classmap": [
             "app/AppKernel.php",
             "src/extensions",
-            "src/framework"
+            "src/framework",
+            "var/autoclasses"
         ],
         "psr-4": {
             "AppBundle\\": "src/AppBundle"
