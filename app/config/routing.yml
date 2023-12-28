@@ -9,3 +9,7 @@ chameleon_system_security:
 app_logout:
     path: /cms/logout
     methods: GET
+
+easy_admin_bundle:
+    resource: "@ChameleonSystemAdminBundle/src/Controller/"
+    type:     annotation

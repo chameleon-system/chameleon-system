@@ -9,6 +9,8 @@
  * file that was distributed with this source code.
  */
 
+use ChameleonSystem\AdminBundle\ChameleonSystemAdminBundle;
+use EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle;
 use KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
@@ -104,6 +106,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
             new \ChameleonSystem\DataAccessBundle\ChameleonSystemDataAccessBundle(),
+            new ChameleonSystemAdminBundle(),
+            new EasyAdminBundle(),
             new KnpUOAuth2ClientBundle()
 
         );
