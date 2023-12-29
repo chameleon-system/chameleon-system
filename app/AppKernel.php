@@ -10,6 +10,7 @@
  */
 
 use ChameleonSystem\AdminBundle\ChameleonSystemAdminBundle;
+use ChameleonSystem\AdminShopBundle\ChameleonSystemAdminShopBundle;
 use EasyCorp\Bundle\EasyAdminBundle\EasyAdminBundle;
 use KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
@@ -107,6 +108,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
             new \ChameleonSystem\DataAccessBundle\ChameleonSystemDataAccessBundle(),
             new ChameleonSystemAdminBundle(),
+            new ChameleonSystemAdminShopBundle(),
             new EasyAdminBundle(),
             new KnpUOAuth2ClientBundle()
 
