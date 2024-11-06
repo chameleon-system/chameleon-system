@@ -4,7 +4,7 @@ chameleon_system_view_renderer:
 
 chameleon_system_security:
     resource: "@ChameleonSystemSecurityBundle/src/Controller/"
-    type:     annotation
+    type:     attribute
 
 app_logout:
     path: /cms/logout
