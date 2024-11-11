@@ -1,0 +1,28 @@
+{# @var breadcrumb \ChameleonSystem\BreadcrumbBundle\Library\DataModel\BreadcrumbDataModel #}
+{# @var breadcrumbItem \ChameleonSystem\BreadcrumbBundle\Library\DataModel\BreadcrumbItemDataModel #}
+
+{% if breadcrumb|length > 0 %}
+    <div class="breadcrumb-wrapper d-print-none">
+        <nav aria-label="breadcrumb" class="d-flex">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+                {% for breadcrumbItem in breadcrumb %}
+                    <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="breadcrumb-item" aria-current="page">
+                        {% if not loop.last %}
+                        <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="{{ breadcrumbItem.url }}" title="{{ breadcrumbItem.name }}">
+                            {% endif %}
+                            {% if loop.first and 'Home' == breadcrumbItem.name %}
+                                <span itemprop="name" class="i i-home homeSign">&nbsp;</span>
+                            {% else %}
+                                <span itemprop="name">{{ breadcrumbItem.name }}</span>
+                            {% endif %}
+                            {% if not loop.last %}
+                        </a>
+                        <span class="divider i i-arrow_grey"></span>
+                        {% endif %}
+                        <meta itemprop="position" content="{{ loop.index }}" />
+                    </li>
+                {% endfor %}
+            </ol>
+        </nav>
+    </div>
+{% endif %}
