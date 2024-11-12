@@ -46,6 +46,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\CmsChangeLogBundle\ChameleonSystemCmsChangeLogBundle(),
             new \ChameleonSystem\CmsClassManagerBundle\ChameleonSystemCmsClassManagerBundle(),
             new \ChameleonSystem\CmsCoreLogBundle\ChameleonSystemCmsCoreLogBundle(),
+            new \ChameleonSystem\BreadcrumbBundle\ChameleonSystemBreadcrumbBundle(),
             new \ChameleonSystem\CmsCounterBundle\ChameleonSystemCmsCounterBundle(),
             new \ChameleonSystem\CmsFileManagerBundle\ChameleonSystemCmsFileManagerBundle(),
             new \ChameleonSystem\CmsInterfaceManagerBundle\ChameleonSystemCmsInterfaceManagerBundle(),
