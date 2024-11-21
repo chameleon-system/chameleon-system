@@ -26,7 +26,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
     /**
      * {@inheritdoc}
      */
-    public function registerBundles()
+    public function registerBundles(): iterable
     {
         $bundles = array(
             new \AppBundle\AppBundle(),
