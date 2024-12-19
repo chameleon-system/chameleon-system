@@ -396,7 +396,6 @@
                     "src/ShopOrderStatusBundle/objects",
                     "src/ShopOrderStatusBundle/pkgRunFrontendAction",
                     "src/ShopOrderViaPhoneBundle/pkgShop",
-                    "src/AmazonPaymentBundle/lib",
                     "src/ShopPaymentIPNBundle/exceptions",
                     "src/ShopPaymentIPNBundle/interfaces",
                     "src/ShopPaymentIPNBundle/objects",

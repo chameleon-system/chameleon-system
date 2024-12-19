@@ -38,7 +38,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
             new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
 
-            new \ChameleonSystem\AmazonPaymentBundle\ChameleonSystemAmazonPaymentBundle(),
             new \ChameleonSystem\AtomicLockBundle\ChameleonSystemAtomicLockBundle(),
             new \ChameleonSystem\AutoclassesBundle\ChameleonSystemAutoclassesBundle(),
             new \ChameleonSystem\ChameleonShopThemeBundle\ChameleonSystemChameleonShopThemeBundle(),
