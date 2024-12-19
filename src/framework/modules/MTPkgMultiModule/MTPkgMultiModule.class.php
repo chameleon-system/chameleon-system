@@ -9,29 +9,37 @@
  * file that was distributed with this source code.
  */
 
+use ChameleonSystem\CoreBundle\ServiceLocator;
+
 class MTPkgMultiModule extends MTPkgMultiModuleCore
 {
     /**
      * hook is executed every time after a module instance was set into the array $aModuleInstances.
      *
      * @param TdbPkgMultiModuleSetItem $oSetItem
-     * @param TdbCmsTplModuleInstance  $oModuleInstance
+     * @param TdbCmsTplModuleInstance $oModuleInstance
      */
     protected function PostAssertInstanceHook($oSetItem, $oModuleInstance)
     {
-        if ('noticelist' == $oSetItem->fieldSystemName) {
-            $oUser = TdbDataExtranetUser::GetInstance();
-            $aNoticeListArticles = $oUser->GetNoticeListArticles();
+        $user = $this->getExtranetUser();
+
+        if ('noticelist' === $oSetItem->fieldSystemName) {
+            $aNoticeListArticles = $user->GetNoticeListArticles();
             if (null === $aNoticeListArticles || 0 === count($aNoticeListArticles)) {
                 unset($this->aSetItems[$oModuleInstance->id]);
             }
         }
-        if ('lastseen' == $oSetItem->fieldSystemName) {
-            $oUser = TdbDataExtranetUser::GetInstance();
-            $aViewHistory = $oUser->GetArticleViewHistory();
+
+        if ('lastseen' === $oSetItem->fieldSystemName) {
+            $aViewHistory = $user->GetArticleViewHistory();
             if (null === $aViewHistory || 0 === count($aViewHistory)) {
                 unset($this->aSetItems[$oModuleInstance->id]);
             }
         }
+    }
+
+    private function getExtranetUser()
+    {
+        return ServiceLocator::get('chameleon_system_extranet.extranet_user_provider')->getActiveUser();
     }
 }
