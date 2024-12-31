@@ -9,13 +9,17 @@
  * file that was distributed with this source code.
  */
 
+use ChameleonSystem\CoreBundle\ServiceLocator;
+use ChameleonSystem\ShopBundle\Interfaces\ShopServiceInterface;
+
 class MTExtranet extends MTExtranetCore
 {
     protected function PrepareSubmittedData(&$aData)
     {
         parent::PrepareSubmittedData($aData);
-        $oShop = TdbShop::GetInstance();
-        $aData['shop_id'] = $oShop->id;
+
+        $shop = $this->getShopService()->getActiveShop();
+        $aData['shop_id'] = $shop->id;
     }
 
     public function GetHtmlHeadIncludes()
@@ -25,5 +29,10 @@ class MTExtranet extends MTExtranetCore
         $aIncludes = array_merge($aIncludes, $this->getResourcesForSnippetPackage('common/textBlock'));
 
         return $aIncludes;
+    }
+
+    private function getShopService(): ShopServiceInterface
+    {
+        return ServiceLocator::get('chameleon_system_shop.shop_service');
     }
 }
