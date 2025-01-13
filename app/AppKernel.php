@@ -104,7 +104,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
             new KnpUOAuth2ClientBundle(),
             new \ChameleonSystem\EcommerceStatsBundle\ChameleonSystemEcommerceStatsBundle(),
-            new \ChameleonSystem\ImageEditorBundle\ChameleonSystemImageEditorBundle()
+            new \ChameleonSystem\ImageEditorBundle\ChameleonSystemImageEditorBundle(),
+            new \ChameleonSystem\CmsDashboardBundle\ChameleonSystemCmsDashboardBundle()
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
