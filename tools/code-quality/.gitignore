@@ -1,0 +1,4 @@
+vendor
+# we do not want to track the composer.lock file, because we keep updating the code-quality repo and need to fetch 
+# the latest versions of the dependencies each time we run the code-quality checks in ci
+composer.lock
