@@ -97,12 +97,11 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ShopWishlistBundle\ChameleonSystemShopWishlistBundle(),
             new \ChameleonSystem\SnippetRendererBundle\ChameleonSystemSnippetRendererBundle(),
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
-            new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
             new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
             new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
-            new KnpUOAuth2ClientBundle(),
+            new \KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle(),
             new \ChameleonSystem\EcommerceStatsBundle\ChameleonSystemEcommerceStatsBundle(),
             new \ChameleonSystem\ImageEditorBundle\ChameleonSystemImageEditorBundle(),
             new \ChameleonSystem\CmsDashboardBundle\ChameleonSystemCmsDashboardBundle()
