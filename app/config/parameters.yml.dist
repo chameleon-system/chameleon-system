@@ -21,3 +21,5 @@ parameters:
     mailer_host: 127.0.0.1
     mailer_user: ~
     mailer_password: ~
+
+    google_search_console_auth_json: ""

@@ -19,9 +19,6 @@ if (!defined('_CONFIG_LOADED')) {
      */
     define('CMSFIELD_DATA_ENCODING_KEY', ')"y#;ybk98Q.v\:c+Nnid ^SRYL,cfy3B\'n>3*nN');
 
-    define('CHAMELEON_URL_GOOGLE_JQUERY', 'https://code.jquery.com/jquery-3.3.1.min.js');
-    define('CHAMELEON_URL_JQUERY', '/bundles/chameleonsystemchameleonshoptheme/js/jquery/jquery-3.3.1.min.js');
-
     define('CMS_PKG_VIEW_RENDERER_ENABLE_LESS_COMPILER', true);
 
     define('RENDER_DIV_WITH_MODULE_AND_VIEW_NAME_ON_MODULE_LOAD', false);
