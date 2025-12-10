@@ -1,6 +1,5 @@
 {
     "name": "esono/tools",
-    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "composer",
