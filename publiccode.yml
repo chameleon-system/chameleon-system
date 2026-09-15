@@ -1,0 +1,96 @@
+publiccodeYmlVersion: "1"
+
+name: Chameleon System
+
+url: "https://github.com/chameleon-system/chameleon-system.git"
+landingURL: "https://www.esono.de/produkte/chameleon-system/"
+
+platforms:
+  - web
+
+categories:
+  - content-management
+  - e-commerce
+  - application-development
+  - website-builder
+
+organisation:
+  name: ESONO AG
+  uri: "https://www.esono.de/"
+
+developmentStatus: stable
+
+softwareType: standalone/web
+
+description:
+  de:
+    shortDescription: "Open-Source-Plattform für Content Management, Webanwendungen und E-Commerce."
+
+    longDescription: >-
+      Chameleon System ist eine modulare Open-Source-Plattform für Content Management,
+      Webanwendungen und E-Commerce. Die technische Basis bildet Chameleon Base mit
+      Funktionen für strukturierte Inhalte, flexible Datenmodelle, Benutzer- und
+      Rechtemanagement, Mehrsprachigkeit und den Betrieb mehrerer Portale. Für
+      E-Commerce-Anwendungen kann die Plattform um Shop- und Commerce-Funktionen
+      erweitert werden. Chameleon System basiert auf dem Symfony PHP Framework und
+      ist für individuelle, projektbezogene Implementierungen ausgelegt. Durch die
+      modulare Architektur können Inhalte, Produktdaten, Geschäftsprozesse und
+      Schnittstellen an unterschiedliche Anforderungen angepasst werden. Die Plattform
+      unterstützt die Integration externer Systeme wie ERP- und PIM-Lösungen und kann
+      als technische Grundlage für Websites, Shops und komplexere digitale Plattformen
+      eingesetzt werden.
+
+    documentation: "https://manual.chameleon-system.de"
+
+    features:
+      - "Content Management für strukturierte Inhalte"
+      - "E-Commerce- und Shop-Funktionalität"
+      - "Mehrsprachige Websites und Anwendungen"
+      - "Betrieb mehrerer Portale innerhalb einer Plattform"
+      - "Flexible Datenmodelle und Inhaltsstrukturen"
+      - "Integration von ERP-, PIM- und weiteren Drittsystemen"
+      - "Modulare Erweiterung für individuelle Webanwendungen"
+
+  en:
+    shortDescription: "Open-source platform for content management, web applications and e-commerce."
+
+    longDescription: >-
+      Chameleon System is a modular open-source platform for content management,
+      web applications and e-commerce. Its technical foundation is Chameleon Base,
+      which provides functionality for structured content, flexible data models,
+      user and permission management, multilingual projects and multiple portals.
+      The platform can be extended with shop and commerce functionality for
+      e-commerce applications. Chameleon System is based on the Symfony PHP
+      Framework and is designed for individual, project-oriented implementations.
+      Its modular architecture allows content, product data, business processes and
+      integrations to be adapted to different requirements. The platform supports
+      integration with external systems such as ERP and PIM solutions and can serve
+      as the technical foundation for websites, online shops and more complex
+      digital platforms.
+
+    documentation: "https://manual.chameleon-system.de"
+
+    features:
+      - "Content management for structured digital content"
+      - "E-commerce and online shop functionality"
+      - "Multilingual websites and applications"
+      - "Multiple portals within a single platform"
+      - "Flexible data models and content structures"
+      - "Integration with ERP, PIM and other external systems"
+      - "Modular extensions for custom web applications"
+
+legal:
+  license: MIT
+  mainCopyrightOwner: ESONO AG
+
+maintenance:
+  type: internal
+  contacts:
+    - name: "Sven Jansen"
+      affiliation: ESONO AG
+
+localisation:
+  localisationReady: true
+  availableLanguages:
+    - de
+    - en
