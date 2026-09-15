@@ -1,19 +1,28 @@
 # Contributing to Chameleon System
 
-## Collaboration platform
+Thank you for your interest in contributing to Chameleon System.
 
-The canonical development repository is the source of truth for Chameleon System. Public issues and pull requests are
-handled through the [Chameleon System GitHub repository](https://github.com/chameleon-system/chameleon-system).
+## Reporting Issues
 
-## Before submitting a change
+Please report bugs and feature requests through the
+[Chameleon System issue tracker](https://github.com/chameleon-system/chameleon-system/issues).
 
-- Check the existing documentation and upgrade notes for the affected version.
-- Keep changes focused and retain compatibility with the existing Composer structure and CI/CD setup.
-- Do not include credentials, private configuration or generated local files.
-- Run the relevant tests or checks available for the affected component.
+Before creating a new issue, please check whether a similar issue already exists.
 
-## Submitting a contribution
+## Proposing Changes
 
-Create a branch, describe the change and its verification in a pull request, and link the relevant issue when one
-exists. Changes affecting `chameleon-base` or `chameleon-shop` should be coordinated from the main Chameleon System
-project.
+If you would like to propose a change:
+
+1. Create an issue describing the problem or improvement.
+2. Keep changes focused on a single topic.
+3. Follow the existing coding conventions.
+4. Add or update tests where appropriate.
+5. Describe how the change was tested.
+
+For changes affecting chameleon-base or chameleon-shop, please use the main
+Chameleon System project for coordination.
+
+## Documentation
+
+Please update the relevant documentation when a change affects installation,
+configuration or public behaviour.

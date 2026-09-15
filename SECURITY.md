@@ -1,15 +1,26 @@
 # Security Policy
 
-## Reporting a vulnerability
+## Reporting a Vulnerability
 
-Do not report security vulnerabilities through public issues or public mirrors. Send the details to
-security@chameleonsystem.com and allow time for a fix to be prepared before public disclosure.
+Please do not report security vulnerabilities through public issues.
 
-The canonical development repository is authoritative. Public mirrors are not monitored for vulnerability reports.
+Send security-related reports to:
 
-Please include a clear description of the issue, affected versions or components, steps to reproduce it, and any
-available proof of concept. Do not include unnecessary personal data or production credentials.
+security@esono.de
+
+Please include:
+
+a clear description of the vulnerability;
+the affected component or version, if known;
+steps to reproduce the issue;
+a proof of concept, if available.
+
+Please avoid including unnecessary personal data, credentials or production data.
 
 ## Scope
 
-This policy covers Chameleon System and the related `chameleon-base` and `chameleon-shop` repositories.
+This security policy applies to:
+
+Chameleon System
+Chameleon Base
+Chameleon Shop
