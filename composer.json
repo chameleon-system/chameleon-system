@@ -12,13 +12,13 @@
         }
     ],
     "require": {
-        "chameleon-system/chameleon-shop": "~7.1.0",
-        "chameleon-system/chameleon-shop-theme-bundle": "~7.1.0",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "sensio/framework-extra-bundle": "*"
+        "chameleon-system/chameleon-shop": "~8.0.0",
+        "chameleon-system/chameleon-shop-theme-bundle": "~8.0.0",
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "require-dev": {
-        "phpunit/phpunit": "@stable"
+        "phpunit/phpunit": "@stable",
+        "symfony/web-profiler-bundle": "^6.4"
     },
     "autoload": {
         "classmap": [
