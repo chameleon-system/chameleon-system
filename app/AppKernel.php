@@ -25,7 +25,7 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
     /**
      * {@inheritdoc}
      */
-    public function registerBundles()
+    public function registerBundles(): iterable
     {
         $bundles = array(
             new \AppBundle\AppBundle(),
@@ -35,8 +35,8 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \Symfony\Bundle\MonologBundle\MonologBundle(),
             new \Symfony\Bundle\TwigBundle\TwigBundle(),
             new \Symfony\Cmf\Bundle\RoutingBundle\CmfRoutingBundle(),
+            new \Symfony\Bundle\SecurityBundle\SecurityBundle(),
 
-            new \ChameleonSystem\AmazonPaymentBundle\ChameleonSystemAmazonPaymentBundle(),
             new \ChameleonSystem\AtomicLockBundle\ChameleonSystemAtomicLockBundle(),
             new \ChameleonSystem\AutoclassesBundle\ChameleonSystemAutoclassesBundle(),
             new \ChameleonSystem\ChameleonShopThemeBundle\ChameleonSystemChameleonShopThemeBundle(),
@@ -46,7 +46,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\CmsChangeLogBundle\ChameleonSystemCmsChangeLogBundle(),
             new \ChameleonSystem\CmsClassManagerBundle\ChameleonSystemCmsClassManagerBundle(),
             new \ChameleonSystem\CmsCoreLogBundle\ChameleonSystemCmsCoreLogBundle(),
-            new \ChameleonSystem\BreadcrumbBundle\ChameleonSystemBreadcrumbBundle(),
             new \ChameleonSystem\CmsCounterBundle\ChameleonSystemCmsCounterBundle(),
             new \ChameleonSystem\CmsFileManagerBundle\ChameleonSystemCmsFileManagerBundle(),
             new \ChameleonSystem\CmsInterfaceManagerBundle\ChameleonSystemCmsInterfaceManagerBundle(),
@@ -76,8 +75,6 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\MultiModuleBundle\ChameleonSystemMultiModuleBundle(),
             new \ChameleonSystem\NewsletterBundle\ChameleonSystemNewsletterBundle(),
             new \ChameleonSystem\PkgCoreBundle\ChameleonSystemPkgCoreBundle(),
-            new \ChameleonSystem\SanityCheckBundle\ChameleonSystemSanityCheckBundle(),
-            new \ChameleonSystem\SanityCheckChameleonBundle\ChameleonSystemSanityCheckChameleonBundle(),
             new \ChameleonSystem\SearchBundle\ChameleonSystemSearchBundle(),
             new \ChameleonSystem\ShopAffiliateBundle\ChameleonSystemShopAffiliateBundle(),
             new \ChameleonSystem\ShopArticleDetailPagingBundle\ChameleonSystemShopArticleDetailPagingBundle(),
@@ -99,15 +96,21 @@ class AppKernel extends ChameleonSystem\CoreBundle\ChameleonAppKernel
             new \ChameleonSystem\ShopWishlistBundle\ChameleonSystemShopWishlistBundle(),
             new \ChameleonSystem\SnippetRendererBundle\ChameleonSystemSnippetRendererBundle(),
             new \ChameleonSystem\TrackViewsBundle\ChameleonSystemTrackViewsBundle(),
-            new \ChameleonSystem\UpdateCounterMigrationBundle\ChameleonSystemUpdateCounterMigrationBundle(),
             new \ChameleonSystem\UrlAliasBundle\ChameleonSystemUrlAliasBundle(),
             new \ChameleonSystem\ViewRendererBundle\ChameleonSystemViewRendererBundle(),
 
-            new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new \ChameleonSystem\SecurityBundle\ChameleonSystemSecurityBundle(),
+            new \ChameleonSystem\CmsBackendBundle\ChameleonSystemCmsBackendBundle(),
+            new \KnpU\OAuth2ClientBundle\KnpUOAuth2ClientBundle(),
+            new \ChameleonSystem\EcommerceStatsBundle\ChameleonSystemEcommerceStatsBundle(),
+            new \ChameleonSystem\ImageEditorBundle\ChameleonSystemImageEditorBundle(),
+            new \ChameleonSystem\MarkdownCmsBundle\ChameleonSystemMarkdownCmsBundle(),
+            new \Scheb\TwoFactorBundle\SchebTwoFactorBundle(),
+            new \ChameleonSystem\CmsDashboardBundle\ChameleonSystemCmsDashboardBundle(),
+
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
-            $bundles[] = new \ChameleonSystem\DebugBundle\ChameleonSystemDebugBundle();
             $bundles[] = new \ChameleonSystem\DistributionBundle\ChameleonSystemDistributionBundle();
             $bundles[] = new \ChameleonSystem\TwigDebugBundle\ChameleonSystemTwigDebugBundle();
             $bundles[] = new \Symfony\Bundle\WebProfilerBundle\WebProfilerBundle();

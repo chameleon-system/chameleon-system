@@ -54,13 +54,13 @@ $query = "SELECT `cms_field_conf`.*, `cms_field_conf`.`id` AS field_id, `cms_fie
                 FROM `cms_field_conf`
           INNER JOIN `cms_tbl_conf` ON `cms_field_conf`.`cms_tbl_conf_id` = `cms_tbl_conf`.`id`
                WHERE `cms_field_conf`.`is_translatable` = '1'";
-$fieldList = $databaseConnection->fetchAll($query);
+$fieldList = $databaseConnection->fetchAllAssociative($query);
 
 foreach ($fieldList as $fieldData) {
     $tableName = $fieldData['table_name'];
     $fieldName = $fieldData['field_name'];
     $query = sprintf("SHOW FIELDS FROM `%s` WHERE `field` = '%s'", $tableName, $fieldName);
-    $fieldDetails = $databaseConnection->fetchAssoc($query);
+    $fieldDetails = $databaseConnection->fetchAssociative($query);
     $fieldType = $fieldDetails['Type'];
 
     $query = sprintf('ALTER TABLE `%s` ADD `_tmp_%s` %s', $tableName, $fieldName, $fieldType);
