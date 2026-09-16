@@ -23,6 +23,12 @@ The user manual and technical documentation in English language are currently in
 
 The user manual in German language is available here: [https://manual.chameleon-system.de](https://manual.chameleon-system.de)
 
+Source of Truth
+---------------
+
+The canonical development repository is the source of truth for development and collaboration. GitHub and openCode
+repositories are public push mirrors.
+
 Installation
 ------------
 
@@ -38,17 +44,15 @@ provide further license information.
 Reporting an Issue or a Feature Request
 ---------------------------------------
 
-Please report issues and feature requests at the official [GitHub repository](https://github.com/chameleon-system/chameleon-system/issues).
-Issues for the Chameleon repositories chameleon-base and chameleon-shop are also handled centrally in this repository.
+Please report issues and feature requests in the official [GitHub repository](https://github.com/chameleon-system/chameleon-system/issues).
+Issues for the Chameleon repositories chameleon-base and chameleon-shop are handled centrally in this project.
 
 Security Issues
 ---------------
 
-If you have found a security issue in Chameleon System, please send the details to
-security [at] chameleonsystem.com and don't disclose it publicly until we can provide a
-fix for it (we will give our best to do this fast). Thank you!
+Please follow the responsible disclosure process in [SECURITY.md](SECURITY.md).
 
 Contributing
 ------------
 
-TBA.
+Please see [CONTRIBUTING.md](CONTRIBUTING.md).
