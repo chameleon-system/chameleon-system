@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://chameleonsystem.com" target="_blank">
-        <img src="chameleon_logo_png.png" alt="Chameleon System logo">
+        <img src="Chameleon_by_Esono_Logo_black.png" alt="Chameleon System logo">
     </a>
     <br />
     <span>
