@@ -91,7 +91,8 @@ legal:
 maintenance:
   type: internal
   contacts:
-    - name: "Sven Jansen"
+    - name: "ESONO AG"
+      email: "info@esono.de"
       affiliation: ESONO AG
 
 localisation:
